@@ -1,0 +1,7 @@
+# Official checkpoint download and standalone padded 3B conversion only.
+# The fitter/fixture/SC scripts and enabled 1B equivalence verifier import the
+# EasyFHE-backed package: run them in the FHE Python even though their math is CPU.
+# This environment itself needs no PyTorch, Transformers, SciPy, or CUDA.
+numpy>=1.26,<2.3
+safetensors>=0.4.5,<1
+huggingface_hub>=0.35,<1

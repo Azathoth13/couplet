@@ -1,0 +1,32 @@
+SC baseline source and attribution
+
+The SC/Sylph-style application and EasyFHE adapters in this directory are our
+research implementation and are released under the repository GPL-3.0-or-later
+license, except where a source file or third-party notice states otherwise.
+This is not an official benchmark release by the Sylph paper authors.
+
+TurboFHE upstream:
+  https://github.com/fheForge/TurboFHE
+  revision 0e1ce0a2d9c51f22fecfab2c25ed31e039343319
+  The upstream repository requires access. The adapted source files needed by
+  this artifact and their license notices are included locally.
+  Upstream pyproject declares BSD-3-Clause.
+  See UPSTREAM_SOURCE.json and LICENSES/TURBOFHE_UPSTREAM_PYPROJECT.toml.
+  rotation.py adapts the NumPy OrthogonalRotation/convert_model functions from
+  turbofhe/apps/sylph/calibration_artifact.py. Provider terminal_logits.py
+  retains function-level provenance for the source helpers it copied.
+  Retained upstream notices are in LICENSES/.
+
+EasyFHE:
+  https://github.com/jizhuoran/EasyFHE
+  Required separately, at the exact revision/build stated in the repository
+  backend instructions. Its license applies separately. No EasyFHE native
+  binaries, installed environments, or model weights are included here.
+
+Meta Llama 3 and Llama 3.2:
+  Official weights are not redistributed. Users obtain them from Meta/Hugging
+  Face and accept the applicable model license and acceptable-use policy.
+
+QuaRot:
+  https://github.com/spcl/QuaRot
+  Follow the license of the pinned upstream source used for weight conversion.

@@ -1,0 +1,680 @@
+{
+  "model_name": "llama3.2-1b-quarot",
+  "model": {
+    "head_dim": 64,
+    "heads": 32,
+    "kv_heads": 8,
+    "hidden": 2048,
+    "epsilon": 1e-05,
+    "rope_theta": 500000.0,
+    "rope_scaling": {
+      "factor": 32.0,
+      "low_freq_factor": 1.0,
+      "high_freq_factor": 4.0,
+      "original_max_position_embeddings": 8192.0
+    }
+  },
+  "layers": [
+    {
+      "layer": 0,
+      "calibration": "layer-00/calibration.json"
+    },
+    {
+      "layer": 1,
+      "calibration": "layer-01/calibration.json"
+    },
+    {
+      "layer": 2,
+      "calibration": "layer-02/calibration.json"
+    },
+    {
+      "layer": 3,
+      "calibration": "layer-03/calibration.json"
+    },
+    {
+      "layer": 4,
+      "calibration": "layer-04/calibration.json"
+    },
+    {
+      "layer": 5,
+      "calibration": "layer-05/calibration.json"
+    },
+    {
+      "layer": 6,
+      "calibration": "layer-06/calibration.json"
+    },
+    {
+      "layer": 7,
+      "calibration": "layer-07/calibration.json"
+    },
+    {
+      "layer": 8,
+      "calibration": "layer-08/calibration.json"
+    },
+    {
+      "layer": 9,
+      "calibration": "layer-09/calibration.json"
+    },
+    {
+      "layer": 10,
+      "calibration": "layer-10/calibration.json"
+    },
+    {
+      "layer": 11,
+      "calibration": "layer-11/calibration.json"
+    },
+    {
+      "layer": 12,
+      "calibration": "layer-12/calibration.json"
+    },
+    {
+      "layer": 13,
+      "calibration": "layer-13/calibration.json"
+    },
+    {
+      "layer": 14,
+      "calibration": "layer-14/calibration.json"
+    },
+    {
+      "layer": 15,
+      "calibration": "layer-15/calibration.json"
+    }
+  ],
+  "source_fixtures": "historical-source/llama32_1b_model",
+  "source_checkpoint": "../checkpoint",
+  "input_ids": [
+    5618,
+    3136,
+    279,
+    1620,
+    11914,
+    14614,
+    323,
+    656,
+    539,
+    10552,
+    4205,
+    304,
+    420,
+    15439,
+    10137,
+    662,
+    5321,
+    3136,
+    279,
+    1620,
+    11914,
+    14614,
+    323,
+    656,
+    539,
+    10552,
+    4205,
+    304,
+    420,
+    15439,
+    10137,
+    662,
+    5321,
+    3136,
+    279,
+    1620,
+    11914,
+    14614,
+    323,
+    656,
+    539,
+    10552,
+    4205,
+    304,
+    420,
+    15439,
+    10137,
+    662,
+    5321,
+    3136,
+    279,
+    1620,
+    11914,
+    14614,
+    323,
+    656,
+    539,
+    10552,
+    4205,
+    304,
+    420,
+    15439,
+    10137,
+    662,
+    5321,
+    3136,
+    279,
+    1620,
+    11914,
+    14614,
+    323,
+    656,
+    539,
+    10552,
+    4205,
+    304,
+    420,
+    15439,
+    10137,
+    662,
+    5321,
+    3136,
+    279,
+    1620,
+    11914,
+    14614,
+    323,
+    656,
+    539,
+    10552,
+    4205,
+    304,
+    420,
+    15439,
+    10137,
+    662,
+    5321,
+    3136,
+    279,
+    1620,
+    11914,
+    14614,
+    323,
+    656,
+    539,
+    10552,
+    4205,
+    304,
+    420,
+    15439,
+    10137,
+    662,
+    5321,
+    3136,
+    279,
+    1620,
+    11914,
+    14614,
+    323,
+    656,
+    539,
+    10552,
+    720,
+    791,
+    6864,
+    315,
+    9822,
+    374
+  ],
+  "plain_inputs": "plain_inputs.npz",
+  "plain_final_hidden": "plain-final-hidden.npy",
+  "terminal": {
+    "kind": "quarot_folded_norm",
+    "lm_head": "lm_head.npy",
+    "epsilon": 1e-05,
+    "expected_top_k": [
+      {
+        "token_id": 12366,
+        "logit": 20.572570454333107
+      },
+      {
+        "token_id": 198,
+        "logit": 19.397108821931113
+      },
+      {
+        "token_id": 25,
+        "logit": 18.626894119178637
+      },
+      {
+        "token_id": 1328,
+        "logit": 18.159877397320486
+      },
+      {
+        "token_id": 5380,
+        "logit": 18.110625129009378
+      }
+    ]
+  },
+  "expected_next_token_id": 12366,
+  "calibration": [
+    {
+      "layer": 0,
+      "seconds": 37.6,
+      "rounds": 2,
+      "logit_bound": 35.59,
+      "centered": 36.8,
+      "silu_bound": 17.6,
+      "silu_degree": 127,
+      "rms_interval": [
+        1e-05,
+        0.001573
+      ],
+      "stage_bounds": {
+        "q": 27.23,
+        "k": 20.39,
+        "v": 0.8,
+        "attention": 0.72,
+        "o": 0.15,
+        "gate": 17.6,
+        "up": 5.87,
+        "gated": 59.1,
+        "down": 4.31,
+        "residual": 4.37
+      },
+      "evaluation_exceeded": [],
+      "out_max": 0.595
+    },
+    {
+      "layer": 1,
+      "seconds": 36.9,
+      "rounds": 2,
+      "logit_bound": 40.21,
+      "centered": 24.56,
+      "silu_bound": 50.92,
+      "silu_degree": 255,
+      "rms_interval": [
+        0.0006409,
+        1.429
+      ],
+      "stage_bounds": {
+        "q": 23.45,
+        "k": 23.02,
+        "v": 3.35,
+        "attention": 3.35,
+        "o": 0.72,
+        "gate": 50.92,
+        "up": 106.16,
+        "gated": 2095.63,
+        "down": 73.55,
+        "residual": 73.77
+      },
+      "evaluation_exceeded": [],
+      "out_max": 35.049
+    },
+    {
+      "layer": 2,
+      "seconds": 36.5,
+      "rounds": 2,
+      "logit_bound": 53.65,
+      "centered": 36.83,
+      "silu_bound": 8.36,
+      "silu_degree": 63,
+      "rms_interval": [
+        0.001065,
+        648.8
+      ],
+      "stage_bounds": {
+        "q": 19.32,
+        "k": 23.25,
+        "v": 2.0,
+        "attention": 1.54,
+        "o": 0.37,
+        "gate": 8.36,
+        "up": 4.39,
+        "gated": 3.93,
+        "down": 0.4,
+        "residual": 73.79
+      },
+      "evaluation_exceeded": [],
+      "out_max": 35.055
+    },
+    {
+      "layer": 3,
+      "seconds": 37.1,
+      "rounds": 2,
+      "logit_bound": 48.16,
+      "centered": 25.42,
+      "silu_bound": 7.64,
+      "silu_degree": 31,
+      "rms_interval": [
+        0.002101,
+        649.4
+      ],
+      "stage_bounds": {
+        "q": 19.54,
+        "k": 30.99,
+        "v": 2.29,
+        "attention": 1.31,
+        "o": 0.36,
+        "gate": 7.64,
+        "up": 7.05,
+        "gated": 3.45,
+        "down": 0.45,
+        "residual": 73.81
+      },
+      "evaluation_exceeded": [],
+      "out_max": 35.095
+    },
+    {
+      "layer": 4,
+      "seconds": 40.0,
+      "rounds": 2,
+      "logit_bound": 48.99,
+      "centered": 26.26,
+      "silu_bound": 7.04,
+      "silu_degree": 31,
+      "rms_interval": [
+        0.003069,
+        650.1
+      ],
+      "stage_bounds": {
+        "q": 19.79,
+        "k": 27.52,
+        "v": 2.3,
+        "attention": 1.31,
+        "o": 0.42,
+        "gate": 7.04,
+        "up": 6.66,
+        "gated": 3.02,
+        "down": 0.48,
+        "residual": 73.97
+      },
+      "evaluation_exceeded": [],
+      "out_max": 35.202
+    },
+    {
+      "layer": 5,
+      "seconds": 43.3,
+      "rounds": 2,
+      "logit_bound": 99.95,
+      "centered": 62.25,
+      "silu_bound": 11.22,
+      "silu_degree": 63,
+      "rms_interval": [
+        0.003784,
+        651.2
+      ],
+      "stage_bounds": {
+        "q": 26.76,
+        "k": 34.1,
+        "v": 2.02,
+        "attention": 1.62,
+        "o": 0.43,
+        "gate": 11.22,
+        "up": 7.17,
+        "gated": 4.19,
+        "down": 0.49,
+        "residual": 74.1
+      },
+      "evaluation_exceeded": [],
+      "out_max": 35.289
+    },
+    {
+      "layer": 6,
+      "seconds": 54.5,
+      "rounds": 2,
+      "logit_bound": 64.78,
+      "centered": 45.09,
+      "silu_bound": 12.88,
+      "silu_degree": 63,
+      "rms_interval": [
+        0.004541,
+        652.3
+      ],
+      "stage_bounds": {
+        "q": 20.75,
+        "k": 29.47,
+        "v": 2.2,
+        "attention": 1.96,
+        "o": 0.4,
+        "gate": 12.88,
+        "up": 5.45,
+        "gated": 2.99,
+        "down": 0.49,
+        "residual": 74.11
+      },
+      "evaluation_exceeded": [],
+      "out_max": 35.276
+    },
+    {
+      "layer": 7,
+      "seconds": 41.9,
+      "rounds": 2,
+      "logit_bound": 28.3,
+      "centered": 21.19,
+      "silu_bound": 10.63,
+      "silu_degree": 63,
+      "rms_interval": [
+        0.004544,
+        653.7
+      ],
+      "stage_bounds": {
+        "q": 20.49,
+        "k": 26.68,
+        "v": 2.64,
+        "attention": 1.48,
+        "o": 0.44,
+        "gate": 10.63,
+        "up": 6.71,
+        "gated": 2.93,
+        "down": 0.51,
+        "residual": 74.28
+      },
+      "evaluation_exceeded": [],
+      "out_max": 35.294
+    },
+    {
+      "layer": 8,
+      "seconds": 26.8,
+      "rounds": 2,
+      "logit_bound": 65.39,
+      "centered": 37.85,
+      "silu_bound": 12.16,
+      "silu_degree": 63,
+      "rms_interval": [
+        0.005912,
+        654.9
+      ],
+      "stage_bounds": {
+        "q": 18.61,
+        "k": 26.5,
+        "v": 2.1,
+        "attention": 1.6,
+        "o": 0.4,
+        "gate": 12.16,
+        "up": 7.83,
+        "gated": 6.59,
+        "down": 0.6,
+        "residual": 74.32
+      },
+      "evaluation_exceeded": [],
+      "out_max": 35.35
+    },
+    {
+      "layer": 9,
+      "seconds": 48.4,
+      "rounds": 2,
+      "logit_bound": 51.51,
+      "centered": 28.22,
+      "silu_bound": 12.46,
+      "silu_degree": 63,
+      "rms_interval": [
+        0.006602,
+        655.7
+      ],
+      "stage_bounds": {
+        "q": 22.91,
+        "k": 28.58,
+        "v": 2.69,
+        "attention": 1.75,
+        "o": 0.48,
+        "gate": 12.46,
+        "up": 7.73,
+        "gated": 7.41,
+        "down": 0.78,
+        "residual": 74.44
+      },
+      "evaluation_exceeded": [],
+      "out_max": 35.353
+    },
+    {
+      "layer": 10,
+      "seconds": 37.1,
+      "rounds": 2,
+      "logit_bound": 53.65,
+      "centered": 29.66,
+      "silu_bound": 14.28,
+      "silu_degree": 63,
+      "rms_interval": [
+        0.01106,
+        656.8
+      ],
+      "stage_bounds": {
+        "q": 25.19,
+        "k": 20.73,
+        "v": 3.91,
+        "attention": 2.5,
+        "o": 0.52,
+        "gate": 14.28,
+        "up": 9.19,
+        "gated": 14.6,
+        "down": 0.79,
+        "residual": 74.58
+      },
+      "evaluation_exceeded": [],
+      "out_max": 35.376
+    },
+    {
+      "layer": 11,
+      "seconds": 40.5,
+      "rounds": 2,
+      "logit_bound": 45.45,
+      "centered": 27.26,
+      "silu_bound": 11.51,
+      "silu_degree": 63,
+      "rms_interval": [
+        0.01361,
+        657.2
+      ],
+      "stage_bounds": {
+        "q": 19.62,
+        "k": 32.08,
+        "v": 3.1,
+        "attention": 1.64,
+        "o": 0.4,
+        "gate": 11.51,
+        "up": 11.1,
+        "gated": 8.99,
+        "down": 0.78,
+        "residual": 74.64
+      },
+      "evaluation_exceeded": [],
+      "out_max": 35.406
+    },
+    {
+      "layer": 12,
+      "seconds": 42.7,
+      "rounds": 2,
+      "logit_bound": 40.68,
+      "centered": 23.46,
+      "silu_bound": 16.76,
+      "silu_degree": 127,
+      "rms_interval": [
+        0.02074,
+        657.6
+      ],
+      "stage_bounds": {
+        "q": 22.38,
+        "k": 28.4,
+        "v": 3.65,
+        "attention": 1.71,
+        "o": 0.44,
+        "gate": 16.76,
+        "up": 7.8,
+        "gated": 10.28,
+        "down": 0.94,
+        "residual": 74.64
+      },
+      "evaluation_exceeded": [],
+      "out_max": 35.44
+    },
+    {
+      "layer": 13,
+      "seconds": 44.4,
+      "rounds": 2,
+      "logit_bound": 46.2,
+      "centered": 27.17,
+      "silu_bound": 15.19,
+      "silu_degree": 63,
+      "rms_interval": [
+        0.02662,
+        657.7
+      ],
+      "stage_bounds": {
+        "q": 23.29,
+        "k": 29.04,
+        "v": 4.09,
+        "attention": 2.23,
+        "o": 0.75,
+        "gate": 15.19,
+        "up": 10.31,
+        "gated": 9.73,
+        "down": 1.13,
+        "residual": 74.64
+      },
+      "evaluation_exceeded": [],
+      "out_max": 35.723
+    },
+    {
+      "layer": 14,
+      "seconds": 42.5,
+      "rounds": 2,
+      "logit_bound": 26.38,
+      "centered": 21.85,
+      "silu_bound": 35.09,
+      "silu_degree": 255,
+      "rms_interval": [
+        0.03866,
+        656.4
+      ],
+      "stage_bounds": {
+        "q": 26.2,
+        "k": 25.45,
+        "v": 8.13,
+        "attention": 2.91,
+        "o": 1.18,
+        "gate": 35.09,
+        "up": 23.26,
+        "gated": 21.43,
+        "down": 3.26,
+        "residual": 74.64
+      },
+      "evaluation_exceeded": [],
+      "out_max": 36.003
+    },
+    {
+      "layer": 15,
+      "seconds": 40.6,
+      "rounds": 2,
+      "logit_bound": 47.85,
+      "centered": 28.24,
+      "silu_bound": 57.57,
+      "silu_degree": 255,
+      "rms_interval": [
+        0.03862,
+        648.3
+      ],
+      "stage_bounds": {
+        "q": 25.17,
+        "k": 33.92,
+        "v": 7.7,
+        "attention": 5.89,
+        "o": 1.74,
+        "gate": 57.57,
+        "up": 51.21,
+        "gated": 600.96,
+        "down": 56.74,
+        "residual": 74.4
+      },
+      "evaluation_exceeded": [],
+      "out_max": 13.063
+    }
+  ],
+  "total_seconds": 653.6
+}

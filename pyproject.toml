@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=77,<82"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "couplet-fhe"
+version = "0.2.0"
+description = "Couplet: ciphertext layout and computation co-design for fully homomorphic LLM inference"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.12"
+# EasyFHE itself is not on PyPI: it comes from a compiled source checkout
+# (EASYFHE_SOURCE_DIR) or a local wheel — see docs/BACKEND.md.
+dependencies = [
+    "setuptools<82",
+    "numpy>=2.2,<3",
+    "sympy>=1.13,<2",
+    "safetensors>=0.4",
+    "mpmath>=1.3",
+    "typing_extensions>=4.10",
+    "triton==3.3.1",  # 3.2.0 bundles ptxas 12.4 (no sm_120); 3.3.1 ships ptxas-blackwell
+]
+
+[tool.setuptools.packages.find]
+include = ["llama3fhe", "llama3fhe.*"]
+
+[tool.setuptools.package-data]
+"llama3fhe.acceleration" = ["kernels/*.cu"]
+"llama3fhe.acceleration.fhe_ext" = ["kernels/*.cu", "README.md", "SOURCE_MANIFEST.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "-p no:cacheprovider"
+markers = [
+    "gpu: creates a real CUDA context (auto-skipped without a GPU; deselect with -m 'not gpu')",
+]
+
+[dependency-groups]
+dev = ["ruff>=0.16", "pytest>=8"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "ruff>=0.16"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+# F = pyflakes parity (the existing gate), I = deterministic import order.
+select = ["F", "I"]
+# Package __init__ modules re-export their public surface.
+per-file-ignores = { "**/__init__.py" = ["F401"] }
+
+[tool.ruff.lint.isort]
+known-first-party = ["llama3fhe"]

@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "id": "1b",
+  "model": "llama3.2-1b",
+  "num_layers": 16,
+  "prefix_k": 0,
+  "prefill_tokens": 128,
+  "geometry": {
+    "native_hidden": 2048,
+    "physical_hidden": 2048,
+    "native_query_heads": 32,
+    "physical_query_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 64
+  },
+  "checkpoint": {
+    "official_repo": "meta-llama/Llama-3.2-1B",
+    "official_revision": "4e20de362430cd3b72f300e6b0f18e50e7166e08",
+    "frozen_mirror_repo": "unsloth/Llama-3.2-1B",
+    "frozen_mirror_revision": "9535bd9b1d1dea6acafbdc4813b728796aeb28da",
+    "mirror_note": "Pinned mirror; the downloader verifies weight blobs against the pinned official repository. Configuration metadata may differ.",
+    "official_weight_blobs": {
+      "model.safetensors": {
+        "sha256": "68a2e4be76fa709455a60272fba8e512c02d81c46e6c671cc9449e374fd6809a",
+        "bytes": 2471645608
+      }
+    }
+  },
+  "paths": {
+    "raw": "models/Llama-3.2-1B",
+    "checkpoint": "models/Llama-3.2-1B-quarot",
+    "fixtures": "fixtures/1b",
+    "poly_kv": "fixtures/1b/prefill_kv_poly.npz",
+    "client_embedding_rows": "sc/1b/input/query_embedding.npz",
+    "sc_chain": "sc/1b/chain"
+  },
+  "polynomials": {
+    "rmsnorm": "assets/polynomials/1b/runtime/rmsnorm_poly_coeffs.json",
+    "silu": "assets/polynomials/1b/runtime/silu_poly_coeffs.json",
+    "softmax": "assets/polynomials/1b/runtime/softmax_poly_coeffs.json"
+  },
+  "fixture_polynomials": {
+    "rmsnorm": "assets/polynomials/1b/reference/rmsnorm_poly_coeffs.json",
+    "silu": "assets/polynomials/1b/reference/silu_poly_coeffs.json",
+    "softmax": "assets/polynomials/1b/reference/softmax_poly_coeffs.json"
+  },
+  "odin": {
+    "entrypoint": "bench/t2_prefill_decode.py",
+    "environment": {
+      "ODIN_SYLPH_KERNELS": "1",
+      "ODIN_SYLPH_HOSTCACHE": "1",
+      "ODIN_BATCH_BS": "1",
+      "ODIN_MULTI_MAC": "1",
+      "ODIN_MULTI_GIANT_HOIST": "1",
+      "ODIN_SPARSE_NONEXT_BABY": "1",
+      "ODIN_SPARSE_GPU_MASKS": "1",
+      "ODIN_SPARSE_FUSED": "1",
+      "ODIN_FAST_STAGE2": "1",
+      "ODIN_FAST_ENCODE": "1",
+      "ODIN_LANE_PT_CACHE": "1",
+      "ODIN_ASYNC_H2D": "1",
+      "T2_STAGE_SYNC": "0",
+      "T2_WEIGHT_EVICT": "0",
+      "T2_PD_DROP_HOST_KEYS": "1",
+      "T2_PD_DEFER_HOST_RETAIN": "0",
+      "T2_PREFILL_KV_EMIT_STREAM": "0",
+      "T2_PREFILL_KV_EMIT_OVERLAP": "0",
+      "T2_SOFTMAX_PARTS": "exp,j1,k",
+      "T2_SOFTMAX_LAYERS": "0-1",
+      "T2_SOFTMAX_POST_EXP_LAYERS": "0-1",
+      "T2_SOFTMAX_POST_EXP_QKV_LIMBS": "15",
+      "T2_KEY_LIMB_CAPS": "linear=16,attn_input=15,attn_input_lane=15,attn_input_q=15,attn_input_k=15,attn_input_v=15,attn_core=15,attn_qk=15,attn_pv=15",
+      "T2_RMS_SLIM_LAYERS": "all",
+      "T2_RMS_SLIM_MIN_AUTO": "1",
+      "LLAMA_FHE_SOFTMAX_SCHAIN": "1",
+      "LLAMA_FHE_PLAIN_CACHE_GB": "1",
+      "LLAMA_FHE_PLAIN_CACHE_MAX_SOURCE_MB": "1",
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "1",
+      "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+      "T2_RMS_COEFFS": "{repo}/assets/polynomials/1b/runtime/rmsnorm_poly_coeffs.json",
+      "T2_SILU_COEFFS": "{repo}/assets/polynomials/1b/runtime/silu_poly_coeffs.json",
+      "T2_SOFTMAX_COEFFS": "{repo}/assets/polynomials/1b/runtime/softmax_poly_coeffs.json"
+    },
+    "arguments": [
+      "--input-level",
+      "35",
+      "--decode-input-level",
+      "35",
+      "--kv-limbs",
+      "12",
+      "--kv-value-limbs",
+      "8",
+      "--qk-score-level-drop",
+      "3",
+      "--encode-depth",
+      "0",
+      "--attention-limb-cap",
+      "17",
+      "--sl",
+      "--sl-baby",
+      "16",
+      "--warm-keys",
+      "--warmup-layer0",
+      "--retain-weights",
+      "none",
+      "--evict-prefill-keys",
+      "--verify-every",
+      "0"
+    ],
+    "world_arguments": {
+      "1": [
+        "--mlp-shard-k",
+        "1"
+      ],
+      "2": [
+        "--mlp-shard-k",
+        "2"
+      ],
+      "4": [
+        "--mlp-shard-k",
+        "2"
+      ],
+      "8": [
+        "--mlp-shard-k",
+        "2"
+      ]
+    },
+    "measurement": {
+      "prefill": "sum_layer_max_rank_forward",
+      "decode": "hot_replay",
+      "decode_tokens": 3,
+      "replay_decode_same_token": true
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "repository": "https://github.com/fheForge/TurboFHE",
+  "commit": "0e1ce0a2d9c51f22fecfab2c25ed31e039343319",
+  "upstream_license_declaration": "BSD-3-Clause (upstream pyproject.toml); all tracked license and notice files inside the package are retained."
+}

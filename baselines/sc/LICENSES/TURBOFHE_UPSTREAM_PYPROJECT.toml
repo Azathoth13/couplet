@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turbofhe"
+version = "0.1.0"
+description = "GPU CKKS bootstrapping library on stock PyTorch: uint32 RNS kernels JIT-compiled per GPU architecture"
+requires-python = ">=3.12"
+license = {text = "BSD-3-Clause"}
+dependencies = [
+    # torch is installed from the CUDA 12.8 index:
+    #   pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+    "torch==2.11.0",
+    "numpy>=2.0",
+    "mpmath>=1.3",
+    "ninja>=1.11",
+]
+
+[project.optional-dependencies]
+# pytest-xdist: the CPU suite runs as `pytest -n 8 --dist loadscope` (tools/gate.py)
+dev = ["pytest>=8", "pytest-xdist>=3.6", "libcst>=1.8"]
+npu = ["cmake>=3.27"]
+
+[tool.setuptools.packages.find]
+include = ["turbofhe*"]
+
+[tool.setuptools.package-data]
+turbofhe = ["ARCHITECTURE.md", "backend/**/csrc/**/*", "backend/word64/ops.yaml", "**/*.json"]
+"turbofhe.apps.thor" = ["README.md", "THIRD_PARTY_LICENSE"]
+"turbofhe.apps.sylph" = ["README.md", "THIRD_PARTY_LICENSE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# a marker that is not declared here is a typo, not a silent no-op
+addopts = "--strict-markers"
+markers = [
+    "gpu: needs the CUDA device and several minutes; run with --run-gpu",
+]

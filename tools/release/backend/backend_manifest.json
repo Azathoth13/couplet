@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "project": "Couplet",
+  "backend": "EasyFHE",
+  "release_tag": "v0.2.0",
+  "upstream_repository": "https://github.com/jizhuoran/EasyFHE",
+  "source_commit": "949c3bdebacdaeb885c45d61ba28436e7f959cd3",
+  "wheel": {
+    "filename": "easyfhe-0.1.1+cu128.git949c3bd.u2204-cp312-cp312-linux_x86_64.whl",
+    "bytes": 56863015,
+    "sha256": "c0bc34862cdbceb614556ac196849e5844e492f938448d9fdd8d8549a3bc3653",
+    "package": "easyfhe",
+    "version": "0.1.1+cu128.git949c3bd.u2204",
+    "wheel_tag": "cp312-cp312-linux_x86_64",
+    "requires_python": ">=3.10.0",
+    "declared_license": "GPL-3.0-only; includes BSD-3-Clause PyTorch-derived components",
+    "license_files": [
+      "LICENSE",
+      "NOTICE"
+    ],
+    "cuda_version": "12.8",
+    "source_commit": "949c3bdebacdaeb885c45d61ba28436e7f959cd3",
+    "embedded_cuda_architectures": [
+      "sm_120",
+      "sm_90"
+    ],
+    "max_glibc": "2.35",
+    "native_libraries": [
+      {
+        "path": "easyfhe/_C.cpython-312-x86_64-linux-gnu.so",
+        "sha256": "d30ddcb8988703a84f5cc016481ddf8a96a85c578fa5e714b5e09ba09dbb5d46",
+        "bytes": 16096,
+        "max_glibc": "2.25",
+        "needed": [
+          "libtorch_python.so",
+          "libc.so.6"
+        ],
+        "runpath": [
+          "$ORIGIN/lib"
+        ]
+      },
+      {
+        "path": "easyfhe/lib/libc10.so",
+        "sha256": "c7bd8b50f8360dffaee28a94c7a5c7617cea49b60e1d6400faf1f22953d1846f",
+        "bytes": 3007376,
+        "max_glibc": "2.34",
+        "needed": [
+          "libm.so.6",
+          "libgcc_s.so.1",
+          "libc.so.6",
+          "ld-linux-x86-64.so.2"
+        ],
+        "runpath": [
+          "$ORIGIN"
+        ]
+      },
+      {
+        "path": "easyfhe/lib/libc10_cuda.so",
+        "sha256": "ae46bd3b97627047864d2d4bc96a5055e06f8c0fd7a518993429c9bf9d47524d",
+        "bytes": 2111592,
+        "max_glibc": "2.34",
+        "needed": [
+          "libc10.so",
+          "libcudart.so.12",
+          "libm.so.6",
+          "libgcc_s.so.1",
+          "libc.so.6",
+          "ld-linux-x86-64.so.2"
+        ],
+        "runpath": [
+          "$ORIGIN:/usr/local/cuda/lib64"
+        ]
+      },
+      {
+        "path": "easyfhe/lib/libcaffe2_nvrtc.so",
+        "sha256": "2e5edf1504d377752ff0b1e040c762d07d40efa56c47a225e21efd4f8f91f4f7",
+        "bytes": 113496,
+        "max_glibc": "2.25",
+        "needed": [
+          "libnvrtc.so.12",
+          "libcuda.so.1",
+          "libm.so.6",
+          "libgcc_s.so.1",
+          "libc.so.6",
+          "ld-linux-x86-64.so.2"
+        ],
+        "runpath": [
+          "$ORIGIN:/usr/local/cuda/lib64"
+        ]
+      },
+      {
+        "path": "easyfhe/lib/libshm.so",
+        "sha256": "4e453875ea277382b18295a2257141dc00728549dc8ed6169d6e7b9e105cb193",
+        "bytes": 1394080,
+        "max_glibc": "2.34",
+        "needed": [
+          "libtorch_cpu.so",
+          "libc10.so",
+          "libm.so.6",
+          "libgcc_s.so.1",
+          "libc.so.6",
+          "ld-linux-x86-64.so.2"
+        ],
+        "runpath": [
+          "$ORIGIN"
+        ]
+      },
+      {
+        "path": "easyfhe/lib/libtorch.so",
+        "sha256": "d4d1b1371a86b021b1896600cb76748637234731abf32c1dc336cb1758126dc2",
+        "bytes": 16016,
+        "max_glibc": "2.25",
+        "needed": [
+          "libtorch_cpu.so",
+          "libtorch_cuda.so",
+          "libc.so.6"
+        ],
+        "runpath": [
+          "$ORIGIN:/usr/local/cuda/lib64"
+        ]
+      },
+      {
+        "path": "easyfhe/lib/libtorch_cpu.so",
+        "sha256": "7e8ca9d8608ba9e96e6eb484327897a0fb7ca6154294eea7ed4d41a58fa1221d",
+        "bytes": 36692168,
+        "max_glibc": "2.35",
+        "needed": [
+          "libc10.so",
+          "libgcc_s.so.1",
+          "libgomp.so.1",
+          "libm.so.6",
+          "libc.so.6",
+          "ld-linux-x86-64.so.2"
+        ],
+        "runpath": [
+          "$ORIGIN"
+        ]
+      },
+      {
+        "path": "easyfhe/lib/libtorch_cuda.so",
+        "sha256": "e8998fc772d282768f15ab81339f15ad565984d32760a36a58e52ccc7a11292e",
+        "bytes": 67244656,
+        "max_glibc": "2.35",
+        "needed": [
+          "libc10_cuda.so",
+          "libcudart.so.12",
+          "libcusparse.so.12",
+          "libcufft.so.11",
+          "libcusolver.so.11",
+          "libcurand.so.10",
+          "libcublas.so.12",
+          "libcublasLt.so.12",
+          "libc10.so",
+          "libtorch_cpu.so",
+          "libm.so.6",
+          "libgcc_s.so.1",
+          "libc.so.6",
+          "ld-linux-x86-64.so.2"
+        ],
+        "runpath": [
+          "$ORIGIN:/usr/local/cuda/lib64"
+        ]
+      },
+      {
+        "path": "easyfhe/lib/libtorch_global_deps.so",
+        "sha256": "ade1c2335ca0d199fcee2b3f1f8d3d7749abe740eae761640de328d76aa20ee8",
+        "bytes": 16016,
+        "max_glibc": "2.25",
+        "needed": [
+          "libcudart.so.12",
+          "libc.so.6"
+        ],
+        "runpath": [
+          "$ORIGIN:/usr/local/cuda/lib64"
+        ]
+      },
+      {
+        "path": "easyfhe/lib/libtorch_python.so",
+        "sha256": "fb380d8380f2a3a93303b36d8e3661e53057e2514af92230ed8699dec33233aa",
+        "bytes": 13732192,
+        "max_glibc": "2.34",
+        "needed": [
+          "libtorch.so",
+          "libshm.so",
+          "libtorch_cpu.so",
+          "libtorch_cuda.so",
+          "libc10_cuda.so",
+          "libcudart.so.12",
+          "libc10.so",
+          "libgcc_s.so.1",
+          "libc.so.6",
+          "ld-linux-x86-64.so.2"
+        ],
+        "runpath": [
+          "$ORIGIN:/usr/local/cuda/lib64"
+        ]
+      }
+    ],
+    "verified": "Preserved measured artifact; static ZIP/ELF/cubin inspection only; no rebuild or GPU execution."
+  },
+  "source": {
+    "filename": "easyfhe-949c3bd-source.tar.gz",
+    "bytes": 23468886,
+    "sha256": "0ff5a6ba78de158cafefdbbc15c916eb1c1f5d0984ad4cd5152b18bfadd7c77c",
+    "regular_files": 5700,
+    "provenance": {
+      "schema_version": 1,
+      "upstream_repository": "https://github.com/jizhuoran/EasyFHE",
+      "upstream_commit": "949c3bdebacdaeb885c45d61ba28436e7f959cd3",
+      "tracked_upstream_sources": "Complete Git tree; original source/license content preserved. No Git history.",
+      "submodules": [
+        {
+          "path": "third_party/FP16",
+          "repository": "https://github.com/Maratyszcza/FP16.git",
+          "commit": "4dfe081cf6bcd15db339cf2680b9281b8451eeb3",
+          "source_bundled": true
+        },
+        {
+          "path": "third_party/cpuinfo",
+          "repository": "https://github.com/pytorch/cpuinfo.git",
+          "commit": "bc3c01e230c6974283e4b89421cfb0e232435589",
+          "source_bundled": true
+        },
+        {
+          "path": "third_party/fmt",
+          "repository": "https://github.com/fmtlib/fmt.git",
+          "commit": "407c905e45ad75fc29bf0f9bb7c5c2fd3475976f",
+          "source_bundled": true
+        },
+        {
+          "path": "third_party/nlohmann",
+          "repository": "https://github.com/nlohmann/json.git",
+          "commit": "55f93686c01528224f448c19128836e7df245f72",
+          "source_bundled": true
+        },
+        {
+          "path": "third_party/psimd",
+          "repository": "https://github.com/Maratyszcza/psimd.git",
+          "commit": "072586a71b55b7f8c584153d223e95687148a900",
+          "source_bundled": true
+        },
+        {
+          "path": "third_party/pybind11",
+          "repository": "https://github.com/pybind/pybind11.git",
+          "commit": "d03662f0984f652b60e7ddce53d3868002275197",
+          "source_bundled": true
+        },
+        {
+          "path": "third_party/sleef",
+          "repository": "https://github.com/shibatch/sleef",
+          "commit": "5a1d179df9cf652951b59010a2d2075372d67f68",
+          "source_bundled": true
+        }
+      ],
+      "extra_header_dependency": {
+        "path": "third_party/NVTX",
+        "repository": "https://github.com/NVIDIA/NVTX",
+        "commit": "e170594ac7cf1dac584da473d4ca9301087090c1",
+        "license": "Apache-2.0",
+        "source_bundled": true
+      },
+      "build_recipe": "couplet-build/",
+      "archive_additions": [
+        "Pinned submodule contents",
+        "Pinned NVTX source",
+        "Portable Couplet build recipe",
+        "GPL-3.0 license text",
+        "This source provenance record"
+      ],
+      "build_verification": "No native rebuild during publication. Archive and wheel are source-provenance linked, not a new byte-identical rebuild proof."
+    }
+  },
+  "files": [
+    {
+      "filename": "easyfhe-0.1.1+cu128.git949c3bd.u2204-cp312-cp312-linux_x86_64.whl",
+      "bytes": 56863015,
+      "sha256": "c0bc34862cdbceb614556ac196849e5844e492f938448d9fdd8d8549a3bc3653",
+      "content_type": "application/octet-stream"
+    },
+    {
+      "filename": "easyfhe-949c3bd-source.tar.gz",
+      "bytes": 23468886,
+      "sha256": "0ff5a6ba78de158cafefdbbc15c916eb1c1f5d0984ad4cd5152b18bfadd7c77c",
+      "content_type": "application/gzip"
+    }
+  ],
+  "license": {
+    "backend": "GPL-3.0-only; includes BSD-3-Clause PyTorch-derived components",
+    "upstream_notices_preserved": true,
+    "source_bundle_licenses": "Archive root LICENSE/NOTICE, COUPLET-LICENSES/GPL-3.0.txt, and per-dependency license files."
+  },
+  "runtime_requirements": {
+    "platform": "Linux x86_64",
+    "python_abi": "CPython 3.12 cp312",
+    "minimum_glibc": "2.35",
+    "cuda_runtime": "12.8; supplied separately by the user",
+    "cuda_driver": "NVIDIA driver compatible with CUDA 12.8 and installed GPU",
+    "embedded_cuda_architectures": [
+      "sm_90",
+      "sm_120"
+    ],
+    "unsupported_by_this_wheel": [
+      "sm_80 (Ampere)",
+      "other Python ABIs",
+      "non-x86_64 systems"
+    ],
+    "application_extensions": "Couplet includes separate CUDA extensions that need CUDA Toolkit/nvcc on first use."
+  },
+  "verification": {
+    "wheel_zip_record": "Checked by zipfile testzip; exact preserved SHA256 and size",
+    "wheel_native": "Static inspection of all 10 native objects and cuobjdump image list; maxGLIBC2.35, no dynamic libstdc++",
+    "source": "Pinned clean source + 7 pinned clean submodules + pinned clean NVTX; all git archives contain no Git history",
+    "native_rebuild_performed": false,
+    "gpu_execution_performed": false,
+    "source_binary_rebuild_byte_identity": "Not established by a fresh rebuild; original source/build records and exact artifact preserved."
+  }
+}

@@ -1,0 +1,48 @@
+# Third-party notices
+
+This package depends on or interoperate with the following components. Obtain and comply with each license separately.
+
+## EasyFHE
+
+- Project: https://github.com/jizhuoran/EasyFHE
+- Runtime source/wheel: supplied by the user and required to expose the
+  bounded/reusable-baby `hoisted_mac_sum` interface documented in this tree.
+- Verify the license of the exact EasyFHE source revision or wheel you install.
+- The exact experiment wheel and corresponding source are distributed through
+  the Couplet GitHub Release attachments, with EasyFHE's GPL-3.0-only license
+  and bundled component notices. They are not checked into this Git tree.
+
+## QuaRot
+
+- Project: https://github.com/spcl/QuaRot
+- Used for Stage-A weight rotation (`tools/third_party/QuaRot`, user-cloned).
+- Follow QuaRot’s upstream license.
+
+## Meta Llama 3
+
+- Model: `meta-llama/Meta-Llama-3-8B`
+- Weights are **not** shipped. Users must accept Meta’s license and download separately.
+- Additional models: `meta-llama/Llama-3.2-1B` and
+  `meta-llama/Llama-3.2-3B`; their own model licenses and use policies apply.
+
+## SC implementation and shared acceleration
+
+- `baselines/sc/` contains this project's SC packing implementation, model
+  adaptations, parallel runtime, and comparison harnesses.
+- `llama3fhe/acceleration/fhe_ext/` contains the project-maintained EasyFHE
+  acceleration extensions used by Couplet. SC providers retain their
+  model-specific extension variants. These are application/extension sources,
+  not an EasyFHE native distribution. Existing source attribution is retained.
+- Vendored components under the SC providers retain their original licenses,
+  provenance manifests and notices, including TurboFHE's BSD-3-Clause and
+  the ATen/PyTorch notices where applicable. See `baselines/sc/NOTICE`.
+
+## Python / scientific stack
+
+- numpy, sympy, mpmath, safetensors, triton, PyTorch, Hugging Face `transformers` — respective licenses.
+
+## Polynomial coefficients
+
+Fitted Softmax / RMSNorm / SiLU coefficient JSON files under
+`assets/polynomials/` are research artifacts produced for
+this FHE stack. They are redistributed under the package LICENSE (GPL-3.0-or-later).

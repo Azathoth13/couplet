@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "component": "Project-maintained EasyFHE acceleration extensions for Couplet and the SC comparison",
+  "files": [
+    {
+      "path": "__init__.py",
+      "sha256": "c6adcf67e30b06f5efe1de32dc1cc7d8e5cf8b99aaffe2f7784348836609e4a3",
+      "bytes": 149
+    },
+    {
+      "path": "bsgs.py",
+      "sha256": "e08134a009191b9bf007e2658c4e3635c6d4af78284c5e1a313ce7b3a82afa68",
+      "bytes": 9047
+    },
+    {
+      "path": "cudalib.py",
+      "sha256": "1bc009a2b093372be73450973c9aa15f12390142ee54dee3d84f891488d1fbcb",
+      "bytes": 952
+    },
+    {
+      "path": "evalmod.py",
+      "sha256": "25799f2afe54ac9c8ac77ad2b0614c4ffa0553635a48a867266afdc3a85130d2",
+      "bytes": 8277
+    },
+    {
+      "path": "hostcache.py",
+      "sha256": "f4b6324da2ca175471bde4379103031a998925bc27e73cfe41321ea407823cc9",
+      "bytes": 7179
+    },
+    {
+      "path": "kernels/evalmod.cu",
+      "sha256": "b277f6532684364242925b7bd76f152fa7c8050fb848a9b8268f5d5a190bd901",
+      "bytes": 3801
+    },
+    {
+      "path": "kernels/keyswitch.cu",
+      "sha256": "e88e9cf5753f766ad06b43a3951574964ab842c4778f64fd320c80d82084931f",
+      "bytes": 108862
+    },
+    {
+      "path": "kernels/packing.cu",
+      "sha256": "80978d9bf3ffc91e718244a18b817468ff83da391800951ca879e48e9a9556fe",
+      "bytes": 3571
+    },
+    {
+      "path": "kernels/rhombus_pcmm.cu",
+      "sha256": "f6f641f3d401fa6cb3ef2a5adeb73fd74e13ce273ece514d04f9b4ca8b39f4de",
+      "bytes": 27904
+    },
+    {
+      "path": "kernels/slotmac.cu",
+      "sha256": "435a6b026cd226c010cec6cd304b559fc64818f888090b2f7e43373cebd5f0c5",
+      "bytes": 4279
+    },
+    {
+      "path": "keyswitch.py",
+      "sha256": "35691276dc8fc07b1061f5e878a24844a884e404c8cebcd31b46a9d44daa7fbc",
+      "bytes": 25209
+    },
+    {
+      "path": "rotate.py",
+      "sha256": "41783d5b7c6f273fefac07c00fc988705e3f6b72b261471ac24162ed349d7109",
+      "bytes": 4640
+    }
+  ]
+}

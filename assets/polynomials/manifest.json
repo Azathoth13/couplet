@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "organization": "model / reference, runtime and optional specialized roles",
+  "files": {
+    "assets/polynomials/1b/reference/rmsnorm_poly_coeffs.json": {
+      "sha256": "623eab048600b7a2c37c48cda9ed39fa5b8db58d5d2af5403370bc610042ebe2",
+      "bytes": 510349
+    },
+    "assets/polynomials/1b/reference/silu_poly_coeffs.json": {
+      "sha256": "50cdf43780bd21dad031523acd9c66c2055c42afdccc07cf5632caeec86ae049",
+      "bytes": 27873
+    },
+    "assets/polynomials/1b/reference/softmax_poly_coeffs.json": {
+      "sha256": "3a835e1851df31e271704ddcd1e4732d23520b79af73cb10070d0a89238f2265",
+      "bytes": 118449
+    },
+    "assets/polynomials/1b/runtime/rmsnorm_poly_coeffs.json": {
+      "sha256": "015c86ccae1f2dd4d9e3655afa73039af08b29f6a91ea1ec7ea0847db441b16b",
+      "bytes": 38984
+    },
+    "assets/polynomials/1b/runtime/silu_poly_coeffs.json": {
+      "sha256": "0cf17230c72123d42bf473a5d84343252698c3f8d9662ddc9294c43025ab1635",
+      "bytes": 101381
+    },
+    "assets/polynomials/1b/runtime/softmax_poly_coeffs.json": {
+      "sha256": "b9def45e1b546741d8f6414a390f93034e181d628b2bea59aee05ae3f3f8e78d",
+      "bytes": 152273
+    },
+    "assets/polynomials/3b/reference/rmsnorm_poly_coeffs.json": {
+      "sha256": "bc20a87040c690a4612220d244c845ad408aecf75d6d1d9ff78c4ffba938459f",
+      "bytes": 877567
+    },
+    "assets/polynomials/3b/runtime/rmsnorm_poly_coeffs.json": {
+      "sha256": "81ed64ab95e705c9ab311bf002f4a7475efc2571a1b157a104f72d663963bc10",
+      "bytes": 63840
+    },
+    "assets/polynomials/3b/runtime/silu_poly_coeffs.json": {
+      "sha256": "6dbf93c69926c61a538bb8b4515abfa3d27307bc40b1a6f355554f461c25e7c5",
+      "bytes": 37804
+    },
+    "assets/polynomials/3b/runtime/softmax_poly_coeffs.json": {
+      "sha256": "d39a214482bf56b8733657b6a968c1c05af6d7926e25c375d6ff1bd3250cdad7",
+      "bytes": 168168
+    },
+    "assets/polynomials/8b/reference/rmsnorm_poly_coeffs.json": {
+      "sha256": "23fdb407b0e51461cc76db58ee1c9cef7b8c22137cf53cbc6243e02e06ed6f97",
+      "bytes": 1307437
+    },
+    "assets/polynomials/8b/reference/silu_poly_coeffs.json": {
+      "sha256": "bef57c7be28c0ccdcd5926e2a1f3a82954ae7bac2f01955e08a220334c1fee3e",
+      "bytes": 378809
+    },
+    "assets/polynomials/8b/reference/softmax_poly_coeffs.json": {
+      "sha256": "2a99a62076c9dd5512d87b9eb927070a2768e72f717a9d65d550e63666e64a7d",
+      "bytes": 1005024
+    },
+    "assets/polynomials/8b/runtime/rmsnorm_poly_coeffs.json": {
+      "sha256": "be568314ddd5d21154069badb2a4ebdf12afadacd1f063514be605a5ec4f06e2",
+      "bytes": 506242
+    },
+    "assets/polynomials/8b/runtime/silu_poly_coeffs.json": {
+      "sha256": "e1b2139fc504fc8c44ff6abad57bfa4b4df14fec58756f8ad4aa9d802097baff",
+      "bytes": 225279
+    },
+    "assets/polynomials/8b/runtime/softmax_poly_coeffs.json": {
+      "sha256": "2dbc8a6d943605f97b7aef480f305bdca52127a0163fd130e5fd5c46dff7878e",
+      "bytes": 992463
+    },
+    "assets/polynomials/8b/single_gpu/rmsnorm_poly_coeffs.json": {
+      "sha256": "c6a7138e08986dee4b49c38c91d0694920ccab0425ad642be56f2922f0cb438b",
+      "bytes": 490722
+    },
+    "assets/polynomials/8b/single_gpu/softmax_poly_coeffs.json": {
+      "sha256": "d0b916b40789c0d972150cdf7a41f629ff58e361f52f1278ad5d2f0eab34c3bf",
+      "bytes": 1095499
+    },
+    "assets/polynomials/8b/prefix2/softmax_poly_coeffs.json": {
+      "sha256": "34f593aa35342fd4ac1de9f4d45e52a7be21652fee65e8a18a7231aba4f9db60",
+      "bytes": 1057921
+    },
+    "assets/polynomials/8b/prefill256/softmax_poly_coeffs.json": {
+      "sha256": "f2f27aab4e517cc487ac9f900aa9ce06a984c790e7f873abf61609a95871ff8c",
+      "bytes": 1106464
+    }
+  }
+}

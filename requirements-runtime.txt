@@ -1,0 +1,9 @@
+# Exact Python package versions for the reference execution environment.
+# EasyFHE is installed separately; see docs/BACKEND.md.
+setuptools==81.0.0
+numpy==2.5.3
+sympy==1.14.0
+safetensors==0.8.0
+mpmath==1.3.0
+typing_extensions==4.16.0
+triton==3.3.1

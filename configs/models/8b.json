@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "id": "8b",
+  "model": "llama3-8b",
+  "num_layers": 32,
+  "prefix_k": 0,
+  "prefill_tokens": 128,
+  "geometry": {
+    "native_hidden": 4096,
+    "physical_hidden": 4096,
+    "native_query_heads": 32,
+    "physical_query_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128
+  },
+  "checkpoint": {
+    "official_repo": "meta-llama/Meta-Llama-3-8B",
+    "official_revision": "8cde5ca8380496c9a6cc7ef3a8b46a0372a1d920",
+    "frozen_mirror_repo": "NousResearch/Meta-Llama-3-8B",
+    "frozen_mirror_revision": "315b20096dc791d381d514deb5f8bd9c8d6d3061",
+    "mirror_note": "Pinned mirror; the downloader verifies weight blobs against the pinned official repository. Configuration metadata may differ.",
+    "official_weight_blobs": {
+      "model-00001-of-00004.safetensors": {
+        "sha256": "f2c144103072514542e327fa8080bd375cb300f2d453fba9ca3aea81d0d4cf33",
+        "bytes": 4976698672
+      },
+      "model-00002-of-00004.safetensors": {
+        "sha256": "d9eee5f23d94405d90b7e9ff88b9443fee42f8528a658f54214c2aba7530d80c",
+        "bytes": 4999802720
+      },
+      "model-00003-of-00004.safetensors": {
+        "sha256": "4b8fbc5e113f69768dd8de84661ea20af8a32b734a9976144b4236c447b40ccc",
+        "bytes": 4915916176
+      },
+      "model-00004-of-00004.safetensors": {
+        "sha256": "5dc34e6bdf2da9e35f0d93b5c333c870f3677dc43dc3a91ea3a8ad28a1fe1acb",
+        "bytes": 1168138808
+      }
+    }
+  },
+  "paths": {
+    "raw": "models/Meta-Llama-3-8B",
+    "checkpoint": "models/Meta-Llama-3-8B-quarot",
+    "fixtures": "fixtures/8b",
+    "poly_kv": "fixtures/8b/prefill_kv_poly.npz",
+    "client_embedding_rows": "sc/8b/input/query_embedding.npz",
+    "sc_chain": "sc/8b/chain"
+  },
+  "polynomials": {
+    "rmsnorm": "assets/polynomials/8b/reference/rmsnorm_poly_coeffs.json",
+    "silu": "assets/polynomials/8b/reference/silu_poly_coeffs.json",
+    "softmax": "assets/polynomials/8b/reference/softmax_poly_coeffs.json"
+  },
+  "fixture_polynomials": {
+    "rmsnorm": "assets/polynomials/8b/reference/rmsnorm_poly_coeffs.json",
+    "silu": "assets/polynomials/8b/reference/silu_poly_coeffs.json",
+    "softmax": "assets/polynomials/8b/reference/softmax_poly_coeffs.json"
+  },
+  "odin": {
+    "entrypoint": "bench/t2_prefill_decode.py",
+    "environment": {
+      "ODIN_SYLPH_KERNELS": "1",
+      "ODIN_SYLPH_HOSTCACHE": "1",
+      "ODIN_BATCH_BS": "1",
+      "ODIN_MULTI_MAC": "1",
+      "ODIN_MULTI_GIANT_HOIST": "1",
+      "ODIN_SPARSE_NONEXT_BABY": "1",
+      "ODIN_SPARSE_GPU_MASKS": "1",
+      "ODIN_SPARSE_FUSED": "1",
+      "ODIN_FAST_STAGE2": "1",
+      "ODIN_FAST_ENCODE": "1",
+      "T2_STAGE_SYNC": "0",
+      "T2_WEIGHT_EVICT": "1",
+      "T2_PD_DROP_HOST_KEYS": "1",
+      "T2_PD_DEFER_HOST_RETAIN": "0",
+      "T2_PREFILL_KV_EMIT_STREAM": "0",
+      "T2_PREFILL_KV_EMIT_OVERLAP": "0",
+      "LLAMA_FHE_SOFTMAX_SCHAIN": "1",
+      "T2_PD_MEMLOG": "0",
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "1",
+      "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+      "LLAMA_FHE_PREFILL_SOFTMAX_SCHAIN": "off"
+    },
+    "arguments": [
+      "--input-level",
+      "35",
+      "--decode-input-level",
+      "35",
+      "--kv-limbs",
+      "12",
+      "--kv-value-limbs",
+      "8",
+      "--qk-score-level-drop",
+      "3",
+      "--encode-depth",
+      "0",
+      "--attention-limb-cap",
+      "17",
+      "--sl",
+      "--sl-baby",
+      "16",
+      "--warm-keys",
+      "--warmup-layer0",
+      "--retain-weights",
+      "none",
+      "--evict-prefill-keys"
+    ],
+    "world_arguments": {
+      "1": [],
+      "2": [],
+      "4": [],
+      "8": []
+    },
+    "measurement": {
+      "prefill": "sum_layer_max_rank_forward",
+      "decode": "first_decode",
+      "decode_tokens": 1,
+      "replay_decode_same_token": false
+    }
+  },
+  "conversion_dependency": {
+    "repository": "https://github.com/spcl/QuaRot",
+    "revision": "5008669b08c1f11f9b64d52d16fddd47ca754c5a",
+    "revision_note": "Pinned upstream revision whose fake_quant source files match the archived validated conversion sources; original conversion checkout git metadata was not archived.",
+    "source_files": {
+      "fake_quant/data_utils.py": {
+        "snapshot_sha256": "c6c32adcb5e6fc9be0346df434168ff6bb083cf7b651ce1156980c4b5942b931",
+        "upstream_matches_snapshot": true
+      },
+      "fake_quant/eval_utils.py": {
+        "snapshot_sha256": "8ddd8cee1dad11fabe5017760b8cca6e48c5addfe7cf6aeae0cf42f8de06944c",
+        "upstream_matches_snapshot": true
+      },
+      "fake_quant/gptq_utils.py": {
+        "snapshot_sha256": "2d449a583bbf56dda94ee8d73a766eb838b88c97204a21bf674d21a9e99cec4d",
+        "upstream_matches_snapshot": true
+      },
+      "fake_quant/hadamard_utils.py": {
+        "snapshot_sha256": "dd3596b49fae635be59398bebb4a87ede2f0b7a72a7b461752fce799262b2d2f",
+        "upstream_matches_snapshot": true
+      },
+      "fake_quant/main.py": {
+        "snapshot_sha256": "52a9fe3b5c1a90daad1cf4054a02c33367995959dbd2524862832a26b8ba7473",
+        "upstream_matches_snapshot": true
+      },
+      "fake_quant/model_utils.py": {
+        "snapshot_sha256": "a1fdb971f10b0d7beaa3b96fc241f019586802241ebcb8a93854062d103f250b",
+        "upstream_matches_snapshot": true
+      },
+      "fake_quant/monkeypatch.py": {
+        "snapshot_sha256": "7dedc2cb3723d776a9efaadc984f5fd68af60ca3d5a466b3e4505eaba43f0954",
+        "upstream_matches_snapshot": true
+      },
+      "fake_quant/quant_utils.py": {
+        "snapshot_sha256": "de0aa3a7abf0acb6371beadae16cb7dfa5cbdb9db7e3872da41670cfa5dee57e",
+        "upstream_matches_snapshot": true
+      },
+      "fake_quant/rotation_utils.py": {
+        "snapshot_sha256": "e1d24439367b933d0f0b6c6a9ce82c79a0fcb82f6bd4d43f4086348af32d54f3",
+        "upstream_matches_snapshot": true
+      },
+      "fake_quant/utils.py": {
+        "snapshot_sha256": "c5e610e0fa1bb45e2ee52a99b386222d5a84030cdae084af196b588e37175695",
+        "upstream_matches_snapshot": true
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+name: CPU contracts
+on: [push, pull_request]
+jobs:
+  portable-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy sympy mpmath safetensors typing_extensions pytest 'setuptools<82'
+      - name: Compile published Python sources
+        run: python -m compileall -q llama3fhe bench baselines/sc tools run_benchmark.py
+      - name: Portable release profiles (no EasyFHE installation)
+        env:
+          PYTHONPATH: .
+        run: python -m pytest -q tests/test_release_cli.py tests/test_backend_download.py baselines/sc/tests
+      - name: Inspect SC plans without a backend
+        run: |
+          for model in 1b 3b 8b; do
+            python run_benchmark.py --model "$model" --scheme sc --world-size 2 --data-root /tmp/data --output /tmp/output --dry-run
+          done

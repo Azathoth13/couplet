@@ -1,0 +1,540 @@
+{
+  "schema": "sylph-quarot-prefix0-public-recalibration-v1",
+  "status": "complete",
+  "model_name": "llama3-8b-p0",
+  "model_layers": 32,
+  "source_checkpoint": "../checkpoint",
+  "source_config_sha256": "2430cee764b6530ff8673cf9ba8561e1d5a33152d503cd0de909ff5718261441",
+  "rotation_seed": 20260908,
+  "common_rotation": {
+    "residual_signs_sha256": "2bcb1ddbdc0eddf86adc74146d691c460b1150273dee2d49e387f21b0814bb34",
+    "residual_permutation_sha256": "cda41ee245ecc798ea9b3a123254a2f3ad7ea0a50a64d05ac8f513621aab831e"
+  },
+  "prefix_token_ids": [],
+  "inputs": {
+    "token_ids": [
+      5618,
+      3136,
+      279,
+      1620,
+      11914,
+      14614,
+      323,
+      656,
+      539,
+      10552,
+      4205,
+      304,
+      420,
+      15439,
+      10137,
+      662,
+      5321,
+      3136,
+      279,
+      1620,
+      11914,
+      14614,
+      323,
+      656,
+      539,
+      10552,
+      4205,
+      304,
+      420,
+      15439,
+      10137,
+      662,
+      5321,
+      3136,
+      279,
+      1620,
+      11914,
+      14614,
+      323,
+      656,
+      539,
+      10552,
+      4205,
+      304,
+      420,
+      15439,
+      10137,
+      662,
+      5321,
+      3136,
+      279,
+      1620,
+      11914,
+      14614,
+      323,
+      656,
+      539,
+      10552,
+      4205,
+      304,
+      420,
+      15439,
+      10137,
+      662,
+      5321,
+      3136,
+      279,
+      1620,
+      11914,
+      14614,
+      323,
+      656,
+      539,
+      10552,
+      4205,
+      304,
+      420,
+      15439,
+      10137,
+      662,
+      5321,
+      3136,
+      279,
+      1620,
+      11914,
+      14614,
+      323,
+      656,
+      539,
+      10552,
+      4205,
+      304,
+      420,
+      15439,
+      10137,
+      662,
+      5321,
+      3136,
+      279,
+      1620,
+      11914,
+      14614,
+      323,
+      656,
+      539,
+      10552,
+      4205,
+      304,
+      420,
+      15439,
+      10137,
+      662,
+      5321,
+      3136,
+      279,
+      1620,
+      11914,
+      14614,
+      323,
+      656,
+      539,
+      10552,
+      720,
+      791,
+      6864,
+      315,
+      9822,
+      374
+    ],
+    "used_for_fitting": false
+  },
+  "plain_inputs": "plain_inputs.npz",
+  "terminal": {
+    "checkpoint": "../checkpoint",
+    "reference_hidden": "client-plain-final-hidden.npy"
+  },
+  "layers": [
+    {
+      "layer": 0,
+      "calibration": "layer-00/calibration.json"
+    },
+    {
+      "layer": 1,
+      "calibration": "layer-01/calibration.json"
+    },
+    {
+      "layer": 2,
+      "calibration": "layer-02/calibration.json"
+    },
+    {
+      "layer": 3,
+      "calibration": "layer-03/calibration.json"
+    },
+    {
+      "layer": 4,
+      "calibration": "layer-04/calibration.json"
+    },
+    {
+      "layer": 5,
+      "calibration": "layer-05/calibration.json"
+    },
+    {
+      "layer": 6,
+      "calibration": "layer-06/calibration.json"
+    },
+    {
+      "layer": 7,
+      "calibration": "layer-07/calibration.json"
+    },
+    {
+      "layer": 8,
+      "calibration": "layer-08/calibration.json"
+    },
+    {
+      "layer": 9,
+      "calibration": "layer-09/calibration.json"
+    },
+    {
+      "layer": 10,
+      "calibration": "layer-10/calibration.json"
+    },
+    {
+      "layer": 11,
+      "calibration": "layer-11/calibration.json"
+    },
+    {
+      "layer": 12,
+      "calibration": "layer-12/calibration.json"
+    },
+    {
+      "layer": 13,
+      "calibration": "layer-13/calibration.json"
+    },
+    {
+      "layer": 14,
+      "calibration": "layer-14/calibration.json"
+    },
+    {
+      "layer": 15,
+      "calibration": "layer-15/calibration.json"
+    },
+    {
+      "layer": 16,
+      "calibration": "layer-16/calibration.json"
+    },
+    {
+      "layer": 17,
+      "calibration": "layer-17/calibration.json"
+    },
+    {
+      "layer": 18,
+      "calibration": "layer-18/calibration.json"
+    },
+    {
+      "layer": 19,
+      "calibration": "layer-19/calibration.json"
+    },
+    {
+      "layer": 20,
+      "calibration": "layer-20/calibration.json"
+    },
+    {
+      "layer": 21,
+      "calibration": "layer-21/calibration.json"
+    },
+    {
+      "layer": 22,
+      "calibration": "layer-22/calibration.json"
+    },
+    {
+      "layer": 23,
+      "calibration": "layer-23/calibration.json"
+    },
+    {
+      "layer": 24,
+      "calibration": "layer-24/calibration.json"
+    },
+    {
+      "layer": 25,
+      "calibration": "layer-25/calibration.json"
+    },
+    {
+      "layer": 26,
+      "calibration": "layer-26/calibration.json"
+    },
+    {
+      "layer": 27,
+      "calibration": "layer-27/calibration.json"
+    },
+    {
+      "layer": 28,
+      "calibration": "layer-28/calibration.json"
+    },
+    {
+      "layer": 29,
+      "calibration": "layer-29/calibration.json"
+    },
+    {
+      "layer": 30,
+      "calibration": "layer-30/calibration.json"
+    },
+    {
+      "layer": 31,
+      "calibration": "layer-31/calibration.json"
+    }
+  ],
+  "weights_source_chain": "calibration-reference/8b-quarot-chain",
+  "runtime_public_prefix_override": "SYLPH_PUBLIC_PREFIX=0",
+  "calibration_method": "P0 51 public calibration sequences and 24 independent P0 holdout sequences; after a Paris128 layer-29 diagnostic failure, one uniform 1.5x per-head inverse interval safety factor was applied to every layer; no individual head bound was fitted to Paris128",
+  "protocol_version": "p0-uniform-head-interval-1p5-post-diagnostic",
+  "head_interval_safety_factor": 1.5,
+  "protocol_revision_trigger": "Paris128 head-24 upper interval at layer 29 exceeded the initially frozen margin-1.5 public contract",
+  "public_input_files": {
+    "selection": {
+      "path": "public-data/selection.json",
+      "sha256": "795ecc3f36e9e69c62e1bcf39f00360dc0fcec09fb6115e0b8c9ef28545ca0ae"
+    },
+    "calibration": {
+      "path": "public-data/calibration.json",
+      "sha256": "5d3c1e0858d5f4cd52192ce57828dabf5b6bee2b275e0a219bb81c4d090a5a87"
+    },
+    "holdout": {
+      "path": "public-data/holdout.json",
+      "sha256": "0b3ce9f5e7701f5ef25419008732d2aa7adaf731446c1fa460d4418f9a76021b"
+    }
+  },
+  "provenance_scripts_sha256": {
+    "generate_p0_plain_inputs.py": "b35383cc44d4331bf93a9c0d299be22f2117159b7a963db1aa5ef41dd89a23ef",
+    "build_p0_calibration.py": "e35d06e2434c7d5e12fdaaf6e7b2799458c856d2dbb62f7894077255283e266b",
+    "revise_head_intervals.py": "db023045539eb02a66b49a94043d3c08c15c5ce93899c554a73a81dfc3d4a67d",
+    "package_p0_chain.py": "83ee3c192a5d6b654a0f21ec28e658bcf45693686fc151bc0f6fa7b63f1245ae"
+  },
+  "weight_links": [
+    {
+      "layer": 0,
+      "calibration_sha256": "7bb63cc5445c4c448fdbb4293652760b9162d78dd9950a1c1fbfaa81354a3763",
+      "validation_sha256": "5a83695b11f5cef86c9598efcc36470da84bb70f522e45ce73d18f4219512c7e",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "382162366e6a456d32a532c61d5facb8a55c5e5cb7b2745c21c4a24cd18144d3"
+    },
+    {
+      "layer": 1,
+      "calibration_sha256": "c983162a83fdf02a29ccd6e4223b44b6c40c724b0170794e3f2ac63697b40de4",
+      "validation_sha256": "7237a7c4c52df3352fcc223e53d54f41a5a4626db2fde524a46b2e991f8d4789",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "fed77f451e28420ea0730dd6ee503f0682cc0bbe21b9d8e5c873edcaeb04bc99"
+    },
+    {
+      "layer": 2,
+      "calibration_sha256": "3208c3e70b7fa58eed10914b41208e4cf71ead021afb0eba1a017bdb91e7747f",
+      "validation_sha256": "3a05773b1727a1b300a3287ff5ea2279f4842609ee7621284b65d41473b68720",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "8f3d4cbc16672bcc0717b5d0bb602f74dbdd9dc9bdd11f615f0d1cb3d96dd984"
+    },
+    {
+      "layer": 3,
+      "calibration_sha256": "e197517ca2cfcf88eb03e050422f7c636389644d6f35d1a5fb2ae9a9d27abc50",
+      "validation_sha256": "30c34d7ccac84722c75a556be2396ce5769e6b741da36998ac6e9a103169944d",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "8d205dac8762ec20e00a337a1fa9e237a98cd6430827e49a41a255e1f84c3bb7"
+    },
+    {
+      "layer": 4,
+      "calibration_sha256": "3a54b908ebc41b22179d11a34fc3d0b69c20ba988726ee10eb685d5bf260fc17",
+      "validation_sha256": "e84687e8240ef5b727ced3233582bbaff979d2bccb33487a89b68f31ef07e101",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "46c5c3ecbf311e0ec3130d2b7969d1fc21cf1cf70a2c53ea30d9f925ada01982"
+    },
+    {
+      "layer": 5,
+      "calibration_sha256": "4a370eaff9e56fd3c627a794e45834c0598b2ea8613973d9fffeeefc0cec2bd8",
+      "validation_sha256": "4af5bc35bd00446f6498806f5b0042f8bf726b18cd63d380aa9abc63c4164221",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "a689236fb96e20e04bab02745193c9cd66f25884188052563946aa2cbe07f969"
+    },
+    {
+      "layer": 6,
+      "calibration_sha256": "a0c9e6fe30f61cb99c0f4a14dd1053183a913a913213cb6d9ae7d4432e298456",
+      "validation_sha256": "b54250158e53c30d3a39c9028a7be10486e1270b7ee2847901a786bcf0a2148a",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "de155a09c34d15f71816ed5308ee3fcd9c9c0011d5e64d02b92a9ab82001aef3"
+    },
+    {
+      "layer": 7,
+      "calibration_sha256": "ccd0a31a3b9e3fe288b2f5654c2412f70be33f0a6fedd9492b897d1cd9479ec1",
+      "validation_sha256": "e74fde7f26be26b2153a97be2571bd85c2bbc978be704349e5a73958e354f88c",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "b1b1fcb4874e15af4ff9248ee6b1d8d9f0ee1a9702647f7744ca95feb148ac8c"
+    },
+    {
+      "layer": 8,
+      "calibration_sha256": "0c30171eddb259072dd5b81a4f2e72ec1dc058c8f6d68c7c24333d66f8fc0455",
+      "validation_sha256": "b337737144f64cb3e65af40c9b82e44776c15a467943ab3c9ee6e1053d4bc745",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "7fbc680f2b02ddddf95bc566783340327f98a962f71944594291ba8d94e800da"
+    },
+    {
+      "layer": 9,
+      "calibration_sha256": "27b30ed3ec8a4adeaec9753469a051bc408f1f36689ad7a0083a1e360c0f19fd",
+      "validation_sha256": "36cfce57df7f4aef037db89b388c353923be38ca4c1972a648c95d048d13a6b4",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "1ce7fc5c6eca0397124c05a649f441ea1cdfe0f510b76c029bc3163779baa47d"
+    },
+    {
+      "layer": 10,
+      "calibration_sha256": "683346c84ec09edce2e2d01e9557892be19c908616fd21b60793bd24bc461e63",
+      "validation_sha256": "6568888ea620517a61f38b8b87b725dc39b092961c5a1f56dab21fae5979cc14",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "9af54c3b1c745026533f1e5ca569092b80213fea8668d5e09a3a527338edfc8a"
+    },
+    {
+      "layer": 11,
+      "calibration_sha256": "9ac3635e888a7a35e58f7d4cc49f57781c235ff845e12b8aca43e4380634adb5",
+      "validation_sha256": "58371ee2acceb4530838904899b257e55d320da8b99551b4caf79f7c48d0759e",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "b8e0d4b649f6ca791240f8f62c73bf55c6c75d16855871ff31dcc242a6c8c6ff"
+    },
+    {
+      "layer": 12,
+      "calibration_sha256": "c589c0f46725645ab5702337ba4ce0e722ace55051f4fadfe62b7ca17c61cee9",
+      "validation_sha256": "d28156135117f4d943fb6bcc9437817e36acbf6e03c9aee93b376117914f3d0a",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "b140adaf8b1f8ed54c82f7eac17bf5d92599c61c1cc96789a8ac93c70cca7832"
+    },
+    {
+      "layer": 13,
+      "calibration_sha256": "1136ca35ea16ecd04340ac2399b92441720bfcd056fe383c54bd682de3bae7e1",
+      "validation_sha256": "16b1b3c95471f8fe3d7927057c1136ebefd34e08eb1dad84dcb5d791fc69481c",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "b43cbbac5a6258381430884acb81553525c9aabc9618d337da7b03d69c3f7a35"
+    },
+    {
+      "layer": 14,
+      "calibration_sha256": "86926a5a158ff9c4537365201ee724d65fd9d826c0cdd9694d039b6cacc38e42",
+      "validation_sha256": "504d3432e8ef9a2fc7734f6922668cb1ee569b43c7f07aad7e988933f5d9e5da",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "43a542c1541ff7e465690191d5a6ea712f4abcda77fd5d99990681a0736c0ef7"
+    },
+    {
+      "layer": 15,
+      "calibration_sha256": "969181e8e4f896d202e9e79e87f5d6f44a3f5eee0fb7e8bc5a52352457fa7de6",
+      "validation_sha256": "ab4a63cd9f77a0a82178a45b4a1af2ff1e9f81c07c830434885d8475b65af37b",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "097a9a4d6d37d971d4f28b956e5ea2ea57f1bac97181fa55f621ea2d749851bf"
+    },
+    {
+      "layer": 16,
+      "calibration_sha256": "6580fcdd39aaf4e385c1ab18e36ec094610ae80eab82f24380989e6c7076135f",
+      "validation_sha256": "3edd96e75ed8c9386f74ae0fc89698e0b98c45ebc533bac343c5d612a7686178",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "01b4ffe681c59992aa3ea79192ce095ce67d417143ab9dc46e29755028ee2d3d"
+    },
+    {
+      "layer": 17,
+      "calibration_sha256": "09bf0c0431aa449dbd30de4e0094cf22b381ef2ee81bfd5d279e68d4ecbe60c0",
+      "validation_sha256": "bcd9f782b126acdb3761cf070c479505fcfbe354d164853d5e5aa19c6576b377",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "d7016f2008d8515b466d8bd5253b76c64664ce9ff4832b567a85d1827726f04d"
+    },
+    {
+      "layer": 18,
+      "calibration_sha256": "d9ec532232e9f5c593983a633ad350ad38261a61d292689cbe821d8e2df42803",
+      "validation_sha256": "b45ab9a757ee0c38c4f0fbc32c912c5b42c314860fe635d14cb19e365855981e",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "91e7417a325a56815d6cd84fa65e38c7f3ee058dfd780872a1df1891e8db527d"
+    },
+    {
+      "layer": 19,
+      "calibration_sha256": "c2ab7c1bb492c12e97d73a7efc9f3bb588ead6c3154f69f05ca29709666edbf7",
+      "validation_sha256": "bad71ed4d58ace1c0e8674dbb3112d88dc93a2fe7f9c39495f02fd8a37deacaf",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "4218679be2058060aab83583fedf222c258d0121b641910702c841d9bc0ad1c1"
+    },
+    {
+      "layer": 20,
+      "calibration_sha256": "b49a2645d65af426a413aa80e7b60c4a8d9e24cd85eb5a58cad3225c228550ac",
+      "validation_sha256": "da99ba1c2d7fe9cd2bbdfc4d23f056395488689f60f4a5f6b590dfe24f517599",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "e76b35b80dfa319edd96a4adf633ed03eb8b27c0754a05ce4306463bf712ab28"
+    },
+    {
+      "layer": 21,
+      "calibration_sha256": "e037cde6bd01171348e7d552fdfcd72ffcb2d187fc3d5526bd03762023c84eed",
+      "validation_sha256": "5fdcfc0c0c253d02ff8d227376c7c7f05c10d882755252a748ce9f393ffa76f1",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "e6a5fe7191d9a262ac4004ceba18cb3b3cf0f7a303893c306ddfa8f69e9d6e81"
+    },
+    {
+      "layer": 22,
+      "calibration_sha256": "ebd631072b6ffc070d800adc02b093ec19a45d924bab36b6d40e0c432cee011c",
+      "validation_sha256": "15048ae0e7819bb8cde41f75ac6330ac93d606c560cc6f73f2962dbddeb6e067",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "61ba0900028780a71e0bef53aa31eb1d24ca4dd77d4fb8cdc4982da168e43066"
+    },
+    {
+      "layer": 23,
+      "calibration_sha256": "0fb5d5a6e6f0992d63dd3a0707845cfbacf122deba68586f04ce2182f5d1de05",
+      "validation_sha256": "1b0aee66115f1f4ce8efa59401715940ad1b9ded6a30909c1b7398a581d7cb3f",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "c518fcf2ee0ca875d1d490bf8af8e68254bd109551e43ff11656975cbe9be873"
+    },
+    {
+      "layer": 24,
+      "calibration_sha256": "d7981b2436d6e44d95c20a704d053fa42bb576d9ff8cee29b5896381bd3eaf9c",
+      "validation_sha256": "8c643fba35d588d0fc351608a99843625e5537c32ec1cd440cfc8b5eb14ae350",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "485d80603473a9e10b5f5d58e380d5ba5eaeac7c250495387e8e4d03c6700b38"
+    },
+    {
+      "layer": 25,
+      "calibration_sha256": "cbf346e1a9b9db9584bc315cdc7ccfb56ae6c7af67d456e541a1b056684b97e0",
+      "validation_sha256": "c64498c7f0ca6ce848d4ab0f69311e0323084c342e97c9a316c417db911ecdb9",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "a7a63b3c23e05cee03c2f9dc83c8bf83b3bec3d20545dd67a43c782cfc5bf293"
+    },
+    {
+      "layer": 26,
+      "calibration_sha256": "6f1149c1f90e2bb1a8555d00ec02ab8714fc206def43207fbc03c18426bb11c2",
+      "validation_sha256": "ade757736e1aa6c900cd7db72c13d23a3f96c34b142ad31bc05f78e009cbc801",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "4349fd413b2643f560405c08144ab83fe2e3c996d295f818c52cda165ec70fac"
+    },
+    {
+      "layer": 27,
+      "calibration_sha256": "0f5e0ee96fe5c72108bab20fcbe0f094dff2760f2a2f902bf70a05b78fff70bd",
+      "validation_sha256": "93bc67538f48936c09bb1761b360cec0adbed5367cc2a71a2d5c5e55c6686671",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "287ac3b9a4d421e351358d6bf10f1024d7ccbc70deb68f5caa530459fd319d3f"
+    },
+    {
+      "layer": 28,
+      "calibration_sha256": "eebd1ffe93c35af4e269fa523f573c3f9b3c00d21970c10dea08aa5576a74ab2",
+      "validation_sha256": "83e191bd19dc46d1596556874ac4686b517eb8729f0481c19c6ed98526a8adec",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "863ecdd9eb8aaec8dfcc3b83518675cc26e65689834f0b6af418bdd377511450"
+    },
+    {
+      "layer": 29,
+      "calibration_sha256": "45754ad9000efe592552035f84abed36c6aaed5ce09c4cb972b55ea6523ef6d3",
+      "validation_sha256": "f977e014ee043f16741f6f43776a429d81cdeeba3226bef4b317bd05857e215f",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "ea8a975e869492c6b049ab8a1f126214a7b92019891727029e1a40b60892f8cd"
+    },
+    {
+      "layer": 30,
+      "calibration_sha256": "3282444014647606f7132e2529978a24671876ebd43138be3d7b98c880e38da3",
+      "validation_sha256": "d246362af2c0eee92824ff5c4429ccd74de92cf46f34343b4ac176f205107cc5",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "0b5a9d668a48721cda9bfd6d0cde1cd41f7ed22f5d88fa88fdb929a2a87bbe7e"
+    },
+    {
+      "layer": 31,
+      "calibration_sha256": "4496eb656f672c5ec285dc587a56db0f344c0dc6b1f4d0bcd876eaea178891e3",
+      "validation_sha256": "92061fc8129691178d852bfaaeae1115832be5943350ae456d46d9093549abc5",
+      "weight_source": "historical-source/weights.npz",
+      "weight_sha256": "a6c073fc7f6a1f0c741bd6e20fde912f68dac6d11d6deab298eae3dfeabc7422"
+    }
+  ],
+  "plain_inputs_sha256": "8d3e5ce30efd561d17257b020d13251eaacb77948693bfe2b4dc1d7b83a99a1f",
+  "client_plain_final_hidden_sha256": "6353a68153f45afa38930e0e06d7ed65e4dba325d68c7ee1e23d61ff03924679",
+  "runtime_relocation": {
+    "frozen_manifest_sha256": "8b4f0e91b458ccd7dfbaf83a880bc8b01e785f8a093359dec3ccd365ce66710d",
+    "checkpoint": "historical-source/Meta-Llama-3-8b-quarot-safetensors-v2"
+  }
+}

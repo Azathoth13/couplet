@@ -1,0 +1,1231 @@
+{
+  "source_files": [
+    {
+      "path": "providers/llama1b/sylph_easy/__init__.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/chain/__init__.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/chain/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/chain/manifest.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/chain/manifest.py",
+      "source_sha256": "2c231016411a044fb43453267edad25909542540c625381661ed04b2d68572d9",
+      "release_sha256": "e0feca21040c7bb47d9172a23ea36b17bbf9642c35f430890d9455da50277a6e"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/chain/run_chain.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/chain/run_chain.py",
+      "source_sha256": "37e8ebbb7fede77dae6ae12a5607849b8cefca2ee34ff2d4eb0c7dea4c6a6fc9",
+      "release_sha256": "b8eeb1e27e72b7e578ddede6049aad3ba2f27a96feb7cb666935c57609c180c5"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/__init__.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/__init__.py",
+      "source_sha256": "5abf387bdcd943794d580358ac6ac0fe71dd4e405bdbe703ddefb1165afcd41b",
+      "release_sha256": "5abf387bdcd943794d580358ac6ac0fe71dd4e405bdbe703ddefb1165afcd41b"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/bsgs.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/bsgs.py",
+      "source_sha256": "a07c07f8f4f2403ed7d450dc729eb9bde464edc09a9aa965831972fbcc4f43c0",
+      "release_sha256": "6888cfff87465e05d7d8299d2757d25f39a254e47270f0d58ed0360e456a56a9"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/coeff.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/coeff.py",
+      "source_sha256": "4be8ce2df38c11aa054a0b02b21df530c69a8b6e4a76d454a0a0a32137ec301c",
+      "release_sha256": "4be8ce2df38c11aa054a0b02b21df530c69a8b6e4a76d454a0a0a32137ec301c"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/cudalib.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/cudalib.py",
+      "source_sha256": "d16780ee7af73112103e52aef5314d610767e9d1518744650873e48e6c74cc6a",
+      "release_sha256": "d16780ee7af73112103e52aef5314d610767e9d1518744650873e48e6c74cc6a"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/engine.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/engine.py",
+      "source_sha256": "232dbdc3a56db7262d2f7beb72610b80217fd2c78e10046f36044810b71b5c6a",
+      "release_sha256": "232dbdc3a56db7262d2f7beb72610b80217fd2c78e10046f36044810b71b5c6a"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/evalmod.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/evalmod.py",
+      "source_sha256": "25799f2afe54ac9c8ac77ad2b0614c4ffa0553635a48a867266afdc3a85130d2",
+      "release_sha256": "25799f2afe54ac9c8ac77ad2b0614c4ffa0553635a48a867266afdc3a85130d2"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/fused.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/fused.py",
+      "source_sha256": "86e1e5bbdc7fc5df08281e8f36d9031486ba11bbd391cba52d80243d0cd71270",
+      "release_sha256": "86e1e5bbdc7fc5df08281e8f36d9031486ba11bbd391cba52d80243d0cd71270"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/hostcache.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/hostcache.py",
+      "source_sha256": "6199240000c1c375a045f8a4c1d7e47472f3a497b538f59ce63a4b17740041d3",
+      "release_sha256": "6199240000c1c375a045f8a4c1d7e47472f3a497b538f59ce63a4b17740041d3"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/kernels/evalmod.cu",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/kernels/evalmod.cu",
+      "source_sha256": "b277f6532684364242925b7bd76f152fa7c8050fb848a9b8268f5d5a190bd901",
+      "release_sha256": "b277f6532684364242925b7bd76f152fa7c8050fb848a9b8268f5d5a190bd901"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/kernels/keyswitch.cu",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/kernels/keyswitch.cu",
+      "source_sha256": "e88e9cf5753f766ad06b43a3951574964ab842c4778f64fd320c80d82084931f",
+      "release_sha256": "e88e9cf5753f766ad06b43a3951574964ab842c4778f64fd320c80d82084931f"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/kernels/packing.cu",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/kernels/packing.cu",
+      "source_sha256": "80978d9bf3ffc91e718244a18b817468ff83da391800951ca879e48e9a9556fe",
+      "release_sha256": "80978d9bf3ffc91e718244a18b817468ff83da391800951ca879e48e9a9556fe"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/kernels/rhombus_pcmm.cu",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/kernels/rhombus_pcmm.cu",
+      "source_sha256": "f6f641f3d401fa6cb3ef2a5adeb73fd74e13ce273ece514d04f9b4ca8b39f4de",
+      "release_sha256": "f6f641f3d401fa6cb3ef2a5adeb73fd74e13ce273ece514d04f9b4ca8b39f4de"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/kernels/slotmac.cu",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/kernels/slotmac.cu",
+      "source_sha256": "435a6b026cd226c010cec6cd304b559fc64818f888090b2f7e43373cebd5f0c5",
+      "release_sha256": "435a6b026cd226c010cec6cd304b559fc64818f888090b2f7e43373cebd5f0c5"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/keyswitch.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/keyswitch.py",
+      "source_sha256": "35691276dc8fc07b1061f5e878a24844a884e404c8cebcd31b46a9d44daa7fbc",
+      "release_sha256": "6f4ef8111c85f0b31b6c31c205de7fdb2bb31cdb657d93f9cdba99f527966698"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/packing.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/packing.py",
+      "source_sha256": "99538d2ddc198363e56285a8ad2568d4cf1f48a5c438eeacaba04472f79d82d6",
+      "release_sha256": "56dcf0aa28a8b4a0ecbe6cd8ed9d08de7c6f3712682ddce721fb73ee10bb36bf"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/rhombus.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/rhombus.py",
+      "source_sha256": "98d483f240b16ad01b7cfed1da75f97e2afc3589e9aa9e46ccb6ba043b615096",
+      "release_sha256": "98d483f240b16ad01b7cfed1da75f97e2afc3589e9aa9e46ccb6ba043b615096"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/rhombus_mv.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/rhombus_mv.py",
+      "source_sha256": "50ee8e4da58863c37c2815ba7ca56b5dbd023fd3571feaa7f5718f006306b5bc",
+      "release_sha256": "50ee8e4da58863c37c2815ba7ca56b5dbd023fd3571feaa7f5718f006306b5bc"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/rotate.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/rotate.py",
+      "source_sha256": "c0aa4c88584247c5de878767714506c4f434e33f64e5dbb79e71b375a64d61ff",
+      "release_sha256": "c0aa4c88584247c5de878767714506c4f434e33f64e5dbb79e71b375a64d61ff"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/easyfhe_ext/slotmac.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/easyfhe_ext/slotmac.py",
+      "source_sha256": "a93a86b0d93de1d90482ae0cde514a516cbd025ffb8ee4344489bb123f63da7b",
+      "release_sha256": "dc209579e87060360b82232d8e95c7e726639fff74ab92d8c370ba4adbe6f3c9"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/layer/__init__.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/layer/__init__.py",
+      "source_sha256": "16a72105c693cc240ca97611514c9a771dacdd76583fee68a0c63ea907e2047a",
+      "release_sha256": "16a72105c693cc240ca97611514c9a771dacdd76583fee68a0c63ea907e2047a"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/layer/approx.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/layer/approx.py",
+      "source_sha256": "dff44f29b2dcefff0c8531bb290fc96fc44b083a9d68bcfe5de61e5ba6b5967c",
+      "release_sha256": "dff44f29b2dcefff0c8531bb290fc96fc44b083a9d68bcfe5de61e5ba6b5967c"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/layer/attention.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/layer/attention.py",
+      "source_sha256": "2b7f76bde227adb0e53877cf11500579cf8c9678665d4eed649269a1f75adc7c",
+      "release_sha256": "2b7f76bde227adb0e53877cf11500579cf8c9678665d4eed649269a1f75adc7c"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/layer/decode.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/layer/decode.py",
+      "source_sha256": "e92ecacfe656ea27363d492a8ac5e6f70cdcf69a7afa5e51ebf4091c0245a13f",
+      "release_sha256": "e92ecacfe656ea27363d492a8ac5e6f70cdcf69a7afa5e51ebf4091c0245a13f"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/layer/decode_mv.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/layer/decode_mv.py",
+      "source_sha256": "0df590570443694209d47d1e9c05ef44f2b226481226c7e5acfeaaac64402a88",
+      "release_sha256": "0df590570443694209d47d1e9c05ef44f2b226481226c7e5acfeaaac64402a88"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/layer/decoder.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/layer/decoder.py",
+      "source_sha256": "8bfe0b5a0e440517b828f46bfb49f8991a791bd65d5a233d29efd602349ed1e0",
+      "release_sha256": "8bfe0b5a0e440517b828f46bfb49f8991a791bd65d5a233d29efd602349ed1e0"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/layer/layout.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/layer/layout.py",
+      "source_sha256": "662613d6e88d62584cc1f61205ef4b96af8bb717a30c449a7ab0e7a02c63a19f",
+      "release_sha256": "662613d6e88d62584cc1f61205ef4b96af8bb717a30c449a7ab0e7a02c63a19f"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/layer/nonlinear.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/layer/nonlinear.py",
+      "source_sha256": "d85dd572ea28aa041353bf28851259f218faa5c947f46074ddf7f6f0c02f0d3e",
+      "release_sha256": "d85dd572ea28aa041353bf28851259f218faa5c947f46074ddf7f6f0c02f0d3e"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/layer/plain.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/layer/plain.py",
+      "source_sha256": "174b3aad19574685b25b1732f9384ca6c7864ecc39d6d16e8be0f6316e8bede7",
+      "release_sha256": "174b3aad19574685b25b1732f9384ca6c7864ecc39d6d16e8be0f6316e8bede7"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/layer/qk_norm.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/layer/qk_norm.py",
+      "source_sha256": "0f5ce8b7a79a03da831cf193eda5f4f9608708939256f834c1eb5fb57772b54d",
+      "release_sha256": "0f5ce8b7a79a03da831cf193eda5f4f9608708939256f834c1eb5fb57772b54d"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/layer/setup.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/layer/setup.py",
+      "source_sha256": "3100501ca25ff0dae3589d53da4e3c6630cca1bcd75b3e27ea8d979725b81c3d",
+      "release_sha256": "3100501ca25ff0dae3589d53da4e3c6630cca1bcd75b3e27ea8d979725b81c3d"
+    },
+    {
+      "path": "providers/llama1b/sylph_easy/tools/terminal_logits.py",
+      "source": "nonlinear/sylph_1b_shard/sylph_easy/tools/terminal_logits.py",
+      "source_sha256": "3ab5cec7ebef7fa2b0cfff189f91fa545546664db5b4665becec5a9a4eb0421f",
+      "release_sha256": "661a3c8a4086958497ac7db9a9f4db735ba5908250627aff18a263ae72ed43d2"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/__init__.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/chain/__init__.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/chain/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/chain/manifest.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/chain/manifest.py",
+      "source_sha256": "bcebada2acd2ab71b7c08f9658c3f8f0ca2aef282ecd40e6c335ec966571b1d9",
+      "release_sha256": "63b415fbccc8cbc2139404c7daefdf355a236828a140726ec22148c6f1f6f0c1"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/chain/run_chain.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/chain/run_chain.py",
+      "source_sha256": "7facfe650595423492a0a9a1abefa75b02cef1a40f4c6904c3247ca5bc49f2cb",
+      "release_sha256": "63f4eba09088b51444a19a7997df8af8d58761fc97fcdc079bcf083f220848b7"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/__init__.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/__init__.py",
+      "source_sha256": "5abf387bdcd943794d580358ac6ac0fe71dd4e405bdbe703ddefb1165afcd41b",
+      "release_sha256": "5abf387bdcd943794d580358ac6ac0fe71dd4e405bdbe703ddefb1165afcd41b"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/automorphism.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/automorphism.py",
+      "source_sha256": "175c20754db1678ce6e224854b0316e01e1b552863f088eff7270e813ede064b",
+      "release_sha256": "175c20754db1678ce6e224854b0316e01e1b552863f088eff7270e813ede064b"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/bsgs.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/bsgs.py",
+      "source_sha256": "a07c07f8f4f2403ed7d450dc729eb9bde464edc09a9aa965831972fbcc4f43c0",
+      "release_sha256": "6888cfff87465e05d7d8299d2757d25f39a254e47270f0d58ed0360e456a56a9"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/coeff.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/coeff.py",
+      "source_sha256": "607dbc07e0344c5ff42addac68163afa8b9689690047cf23d022fc25e652989e",
+      "release_sha256": "607dbc07e0344c5ff42addac68163afa8b9689690047cf23d022fc25e652989e"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/cudalib.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/cudalib.py",
+      "source_sha256": "d16780ee7af73112103e52aef5314d610767e9d1518744650873e48e6c74cc6a",
+      "release_sha256": "d16780ee7af73112103e52aef5314d610767e9d1518744650873e48e6c74cc6a"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/engine.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/engine.py",
+      "source_sha256": "232dbdc3a56db7262d2f7beb72610b80217fd2c78e10046f36044810b71b5c6a",
+      "release_sha256": "232dbdc3a56db7262d2f7beb72610b80217fd2c78e10046f36044810b71b5c6a"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/evalmod.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/evalmod.py",
+      "source_sha256": "25799f2afe54ac9c8ac77ad2b0614c4ffa0553635a48a867266afdc3a85130d2",
+      "release_sha256": "25799f2afe54ac9c8ac77ad2b0614c4ffa0553635a48a867266afdc3a85130d2"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/fused.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/fused.py",
+      "source_sha256": "86e1e5bbdc7fc5df08281e8f36d9031486ba11bbd391cba52d80243d0cd71270",
+      "release_sha256": "86e1e5bbdc7fc5df08281e8f36d9031486ba11bbd391cba52d80243d0cd71270"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/hostcache.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/hostcache.py",
+      "source_sha256": "6199240000c1c375a045f8a4c1d7e47472f3a497b538f59ce63a4b17740041d3",
+      "release_sha256": "6199240000c1c375a045f8a4c1d7e47472f3a497b538f59ce63a4b17740041d3"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/kernels/evalmod.cu",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/kernels/evalmod.cu",
+      "source_sha256": "b277f6532684364242925b7bd76f152fa7c8050fb848a9b8268f5d5a190bd901",
+      "release_sha256": "b277f6532684364242925b7bd76f152fa7c8050fb848a9b8268f5d5a190bd901"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/kernels/keyswitch.cu",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/kernels/keyswitch.cu",
+      "source_sha256": "e88e9cf5753f766ad06b43a3951574964ab842c4778f64fd320c80d82084931f",
+      "release_sha256": "e88e9cf5753f766ad06b43a3951574964ab842c4778f64fd320c80d82084931f"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/kernels/packing.cu",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/kernels/packing.cu",
+      "source_sha256": "80978d9bf3ffc91e718244a18b817468ff83da391800951ca879e48e9a9556fe",
+      "release_sha256": "80978d9bf3ffc91e718244a18b817468ff83da391800951ca879e48e9a9556fe"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/kernels/rhombus_pcmm.cu",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/kernels/rhombus_pcmm.cu",
+      "source_sha256": "f6f641f3d401fa6cb3ef2a5adeb73fd74e13ce273ece514d04f9b4ca8b39f4de",
+      "release_sha256": "f6f641f3d401fa6cb3ef2a5adeb73fd74e13ce273ece514d04f9b4ca8b39f4de"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/kernels/slotmac.cu",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/kernels/slotmac.cu",
+      "source_sha256": "435a6b026cd226c010cec6cd304b559fc64818f888090b2f7e43373cebd5f0c5",
+      "release_sha256": "435a6b026cd226c010cec6cd304b559fc64818f888090b2f7e43373cebd5f0c5"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/keyswitch.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/keyswitch.py",
+      "source_sha256": "35691276dc8fc07b1061f5e878a24844a884e404c8cebcd31b46a9d44daa7fbc",
+      "release_sha256": "6f4ef8111c85f0b31b6c31c205de7fdb2bb31cdb657d93f9cdba99f527966698"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/packing.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/packing.py",
+      "source_sha256": "99538d2ddc198363e56285a8ad2568d4cf1f48a5c438eeacaba04472f79d82d6",
+      "release_sha256": "56dcf0aa28a8b4a0ecbe6cd8ed9d08de7c6f3712682ddce721fb73ee10bb36bf"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/rhombus.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/rhombus.py",
+      "source_sha256": "98d483f240b16ad01b7cfed1da75f97e2afc3589e9aa9e46ccb6ba043b615096",
+      "release_sha256": "98d483f240b16ad01b7cfed1da75f97e2afc3589e9aa9e46ccb6ba043b615096"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/rhombus_mv.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/rhombus_mv.py",
+      "source_sha256": "0bc41acaa1d321777998c59ba4d9bacac8947c0ae4b359fa8c8873aa480ab0d9",
+      "release_sha256": "0bc41acaa1d321777998c59ba4d9bacac8947c0ae4b359fa8c8873aa480ab0d9"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/rotate.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/rotate.py",
+      "source_sha256": "c0aa4c88584247c5de878767714506c4f434e33f64e5dbb79e71b375a64d61ff",
+      "release_sha256": "c0aa4c88584247c5de878767714506c4f434e33f64e5dbb79e71b375a64d61ff"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/easyfhe_ext/slotmac.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/easyfhe_ext/slotmac.py",
+      "source_sha256": "a93a86b0d93de1d90482ae0cde514a516cbd025ffb8ee4344489bb123f63da7b",
+      "release_sha256": "dc209579e87060360b82232d8e95c7e726639fff74ab92d8c370ba4adbe6f3c9"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/layer/__init__.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/layer/__init__.py",
+      "source_sha256": "16a72105c693cc240ca97611514c9a771dacdd76583fee68a0c63ea907e2047a",
+      "release_sha256": "16a72105c693cc240ca97611514c9a771dacdd76583fee68a0c63ea907e2047a"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/layer/approx.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/layer/approx.py",
+      "source_sha256": "dff44f29b2dcefff0c8531bb290fc96fc44b083a9d68bcfe5de61e5ba6b5967c",
+      "release_sha256": "dff44f29b2dcefff0c8531bb290fc96fc44b083a9d68bcfe5de61e5ba6b5967c"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/layer/attention.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/layer/attention.py",
+      "source_sha256": "2b7f76bde227adb0e53877cf11500579cf8c9678665d4eed649269a1f75adc7c",
+      "release_sha256": "2b7f76bde227adb0e53877cf11500579cf8c9678665d4eed649269a1f75adc7c"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/layer/decode.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/layer/decode.py",
+      "source_sha256": "36aff3c543b2dce088f50f48c876691c389359ae2f0fec1320d8ad773fe8fb77",
+      "release_sha256": "36aff3c543b2dce088f50f48c876691c389359ae2f0fec1320d8ad773fe8fb77"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/layer/decode_mv.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/layer/decode_mv.py",
+      "source_sha256": "25d6e3edc649d23e0fa031de05460ee0a839b986500ebeefa4bc3a7b6ec5c23b",
+      "release_sha256": "25d6e3edc649d23e0fa031de05460ee0a839b986500ebeefa4bc3a7b6ec5c23b"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/layer/decoder.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/layer/decoder.py",
+      "source_sha256": "8bfe0b5a0e440517b828f46bfb49f8991a791bd65d5a233d29efd602349ed1e0",
+      "release_sha256": "8bfe0b5a0e440517b828f46bfb49f8991a791bd65d5a233d29efd602349ed1e0"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/layer/layout.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/layer/layout.py",
+      "source_sha256": "662613d6e88d62584cc1f61205ef4b96af8bb717a30c449a7ab0e7a02c63a19f",
+      "release_sha256": "662613d6e88d62584cc1f61205ef4b96af8bb717a30c449a7ab0e7a02c63a19f"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/layer/nonlinear.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/layer/nonlinear.py",
+      "source_sha256": "d85dd572ea28aa041353bf28851259f218faa5c947f46074ddf7f6f0c02f0d3e",
+      "release_sha256": "d85dd572ea28aa041353bf28851259f218faa5c947f46074ddf7f6f0c02f0d3e"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/layer/plain.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/layer/plain.py",
+      "source_sha256": "174b3aad19574685b25b1732f9384ca6c7864ecc39d6d16e8be0f6316e8bede7",
+      "release_sha256": "174b3aad19574685b25b1732f9384ca6c7864ecc39d6d16e8be0f6316e8bede7"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/layer/qk_norm.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/layer/qk_norm.py",
+      "source_sha256": "0f5ce8b7a79a03da831cf193eda5f4f9608708939256f834c1eb5fb57772b54d",
+      "release_sha256": "0f5ce8b7a79a03da831cf193eda5f4f9608708939256f834c1eb5fb57772b54d"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/layer/setup.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/layer/setup.py",
+      "source_sha256": "3100501ca25ff0dae3589d53da4e3c6630cca1bcd75b3e27ea8d979725b81c3d",
+      "release_sha256": "3100501ca25ff0dae3589d53da4e3c6630cca1bcd75b3e27ea8d979725b81c3d"
+    },
+    {
+      "path": "providers/llama3b/sylph_easy/tools/terminal_logits.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/sylph_easy/tools/terminal_logits.py",
+      "source_sha256": "3ab5cec7ebef7fa2b0cfff189f91fa545546664db5b4665becec5a9a4eb0421f",
+      "release_sha256": "661a3c8a4086958497ac7db9a9f4db735ba5908250627aff18a263ae72ed43d2"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/__init__.py",
+      "source": "sc8b/sylph_shard/sylph_easy/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/chain/__init__.py",
+      "source": "sc8b/sylph_shard/sylph_easy/chain/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/chain/manifest.py",
+      "source": "sc8b/sylph_shard/sylph_easy/chain/manifest.py",
+      "source_sha256": "2c231016411a044fb43453267edad25909542540c625381661ed04b2d68572d9",
+      "release_sha256": "e0feca21040c7bb47d9172a23ea36b17bbf9642c35f430890d9455da50277a6e"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/chain/run_chain.py",
+      "source": "sc8b/sylph_shard/sylph_easy/chain/run_chain.py",
+      "source_sha256": "37e8ebbb7fede77dae6ae12a5607849b8cefca2ee34ff2d4eb0c7dea4c6a6fc9",
+      "release_sha256": "b8eeb1e27e72b7e578ddede6049aad3ba2f27a96feb7cb666935c57609c180c5"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/__init__.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/__init__.py",
+      "source_sha256": "5abf387bdcd943794d580358ac6ac0fe71dd4e405bdbe703ddefb1165afcd41b",
+      "release_sha256": "5abf387bdcd943794d580358ac6ac0fe71dd4e405bdbe703ddefb1165afcd41b"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/bsgs.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/bsgs.py",
+      "source_sha256": "a07c07f8f4f2403ed7d450dc729eb9bde464edc09a9aa965831972fbcc4f43c0",
+      "release_sha256": "6888cfff87465e05d7d8299d2757d25f39a254e47270f0d58ed0360e456a56a9"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/coeff.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/coeff.py",
+      "source_sha256": "4be8ce2df38c11aa054a0b02b21df530c69a8b6e4a76d454a0a0a32137ec301c",
+      "release_sha256": "4be8ce2df38c11aa054a0b02b21df530c69a8b6e4a76d454a0a0a32137ec301c"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/cudalib.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/cudalib.py",
+      "source_sha256": "d16780ee7af73112103e52aef5314d610767e9d1518744650873e48e6c74cc6a",
+      "release_sha256": "d16780ee7af73112103e52aef5314d610767e9d1518744650873e48e6c74cc6a"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/engine.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/engine.py",
+      "source_sha256": "232dbdc3a56db7262d2f7beb72610b80217fd2c78e10046f36044810b71b5c6a",
+      "release_sha256": "232dbdc3a56db7262d2f7beb72610b80217fd2c78e10046f36044810b71b5c6a"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/evalmod.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/evalmod.py",
+      "source_sha256": "25799f2afe54ac9c8ac77ad2b0614c4ffa0553635a48a867266afdc3a85130d2",
+      "release_sha256": "25799f2afe54ac9c8ac77ad2b0614c4ffa0553635a48a867266afdc3a85130d2"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/fused.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/fused.py",
+      "source_sha256": "86e1e5bbdc7fc5df08281e8f36d9031486ba11bbd391cba52d80243d0cd71270",
+      "release_sha256": "86e1e5bbdc7fc5df08281e8f36d9031486ba11bbd391cba52d80243d0cd71270"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/hostcache.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/hostcache.py",
+      "source_sha256": "6199240000c1c375a045f8a4c1d7e47472f3a497b538f59ce63a4b17740041d3",
+      "release_sha256": "6199240000c1c375a045f8a4c1d7e47472f3a497b538f59ce63a4b17740041d3"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/kernels/evalmod.cu",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/kernels/evalmod.cu",
+      "source_sha256": "b277f6532684364242925b7bd76f152fa7c8050fb848a9b8268f5d5a190bd901",
+      "release_sha256": "b277f6532684364242925b7bd76f152fa7c8050fb848a9b8268f5d5a190bd901"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/kernels/keyswitch.cu",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/kernels/keyswitch.cu",
+      "source_sha256": "e88e9cf5753f766ad06b43a3951574964ab842c4778f64fd320c80d82084931f",
+      "release_sha256": "e88e9cf5753f766ad06b43a3951574964ab842c4778f64fd320c80d82084931f"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/kernels/packing.cu",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/kernels/packing.cu",
+      "source_sha256": "80978d9bf3ffc91e718244a18b817468ff83da391800951ca879e48e9a9556fe",
+      "release_sha256": "80978d9bf3ffc91e718244a18b817468ff83da391800951ca879e48e9a9556fe"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/kernels/rhombus_pcmm.cu",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/kernels/rhombus_pcmm.cu",
+      "source_sha256": "f6f641f3d401fa6cb3ef2a5adeb73fd74e13ce273ece514d04f9b4ca8b39f4de",
+      "release_sha256": "f6f641f3d401fa6cb3ef2a5adeb73fd74e13ce273ece514d04f9b4ca8b39f4de"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/kernels/slotmac.cu",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/kernels/slotmac.cu",
+      "source_sha256": "435a6b026cd226c010cec6cd304b559fc64818f888090b2f7e43373cebd5f0c5",
+      "release_sha256": "435a6b026cd226c010cec6cd304b559fc64818f888090b2f7e43373cebd5f0c5"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/keyswitch.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/keyswitch.py",
+      "source_sha256": "35691276dc8fc07b1061f5e878a24844a884e404c8cebcd31b46a9d44daa7fbc",
+      "release_sha256": "6f4ef8111c85f0b31b6c31c205de7fdb2bb31cdb657d93f9cdba99f527966698"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/packing.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/packing.py",
+      "source_sha256": "99538d2ddc198363e56285a8ad2568d4cf1f48a5c438eeacaba04472f79d82d6",
+      "release_sha256": "56dcf0aa28a8b4a0ecbe6cd8ed9d08de7c6f3712682ddce721fb73ee10bb36bf"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/rhombus.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/rhombus.py",
+      "source_sha256": "98d483f240b16ad01b7cfed1da75f97e2afc3589e9aa9e46ccb6ba043b615096",
+      "release_sha256": "98d483f240b16ad01b7cfed1da75f97e2afc3589e9aa9e46ccb6ba043b615096"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/rhombus_mv.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/rhombus_mv.py",
+      "source_sha256": "50ee8e4da58863c37c2815ba7ca56b5dbd023fd3571feaa7f5718f006306b5bc",
+      "release_sha256": "50ee8e4da58863c37c2815ba7ca56b5dbd023fd3571feaa7f5718f006306b5bc"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/rotate.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/rotate.py",
+      "source_sha256": "c0aa4c88584247c5de878767714506c4f434e33f64e5dbb79e71b375a64d61ff",
+      "release_sha256": "c0aa4c88584247c5de878767714506c4f434e33f64e5dbb79e71b375a64d61ff"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/easyfhe_ext/slotmac.py",
+      "source": "sc8b/sylph_shard/sylph_easy/easyfhe_ext/slotmac.py",
+      "source_sha256": "a93a86b0d93de1d90482ae0cde514a516cbd025ffb8ee4344489bb123f63da7b",
+      "release_sha256": "dc209579e87060360b82232d8e95c7e726639fff74ab92d8c370ba4adbe6f3c9"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/layer/__init__.py",
+      "source": "sc8b/sylph_shard/sylph_easy/layer/__init__.py",
+      "source_sha256": "16a72105c693cc240ca97611514c9a771dacdd76583fee68a0c63ea907e2047a",
+      "release_sha256": "16a72105c693cc240ca97611514c9a771dacdd76583fee68a0c63ea907e2047a"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/layer/approx.py",
+      "source": "sc8b/sylph_shard/sylph_easy/layer/approx.py",
+      "source_sha256": "dff44f29b2dcefff0c8531bb290fc96fc44b083a9d68bcfe5de61e5ba6b5967c",
+      "release_sha256": "dff44f29b2dcefff0c8531bb290fc96fc44b083a9d68bcfe5de61e5ba6b5967c"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/layer/attention.py",
+      "source": "sc8b/sylph_shard/sylph_easy/layer/attention.py",
+      "source_sha256": "2b7f76bde227adb0e53877cf11500579cf8c9678665d4eed649269a1f75adc7c",
+      "release_sha256": "2b7f76bde227adb0e53877cf11500579cf8c9678665d4eed649269a1f75adc7c"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/layer/decode.py",
+      "source": "sc8b/sylph_shard/sylph_easy/layer/decode.py",
+      "source_sha256": "e92ecacfe656ea27363d492a8ac5e6f70cdcf69a7afa5e51ebf4091c0245a13f",
+      "release_sha256": "e92ecacfe656ea27363d492a8ac5e6f70cdcf69a7afa5e51ebf4091c0245a13f"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/layer/decode_mv.py",
+      "source": "sc8b/sylph_shard/sylph_easy/layer/decode_mv.py",
+      "source_sha256": "0df590570443694209d47d1e9c05ef44f2b226481226c7e5acfeaaac64402a88",
+      "release_sha256": "0df590570443694209d47d1e9c05ef44f2b226481226c7e5acfeaaac64402a88"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/layer/decoder.py",
+      "source": "sc8b/sylph_shard/sylph_easy/layer/decoder.py",
+      "source_sha256": "8bfe0b5a0e440517b828f46bfb49f8991a791bd65d5a233d29efd602349ed1e0",
+      "release_sha256": "8bfe0b5a0e440517b828f46bfb49f8991a791bd65d5a233d29efd602349ed1e0"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/layer/layout.py",
+      "source": "sc8b/sylph_shard/sylph_easy/layer/layout.py",
+      "source_sha256": "662613d6e88d62584cc1f61205ef4b96af8bb717a30c449a7ab0e7a02c63a19f",
+      "release_sha256": "662613d6e88d62584cc1f61205ef4b96af8bb717a30c449a7ab0e7a02c63a19f"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/layer/nonlinear.py",
+      "source": "sc8b/sylph_shard/sylph_easy/layer/nonlinear.py",
+      "source_sha256": "d85dd572ea28aa041353bf28851259f218faa5c947f46074ddf7f6f0c02f0d3e",
+      "release_sha256": "d85dd572ea28aa041353bf28851259f218faa5c947f46074ddf7f6f0c02f0d3e"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/layer/plain.py",
+      "source": "sc8b/sylph_shard/sylph_easy/layer/plain.py",
+      "source_sha256": "174b3aad19574685b25b1732f9384ca6c7864ecc39d6d16e8be0f6316e8bede7",
+      "release_sha256": "174b3aad19574685b25b1732f9384ca6c7864ecc39d6d16e8be0f6316e8bede7"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/layer/qk_norm.py",
+      "source": "sc8b/sylph_shard/sylph_easy/layer/qk_norm.py",
+      "source_sha256": "0f5ce8b7a79a03da831cf193eda5f4f9608708939256f834c1eb5fb57772b54d",
+      "release_sha256": "0f5ce8b7a79a03da831cf193eda5f4f9608708939256f834c1eb5fb57772b54d"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/layer/setup.py",
+      "source": "sc8b/sylph_shard/sylph_easy/layer/setup.py",
+      "source_sha256": "3100501ca25ff0dae3589d53da4e3c6630cca1bcd75b3e27ea8d979725b81c3d",
+      "release_sha256": "3100501ca25ff0dae3589d53da4e3c6630cca1bcd75b3e27ea8d979725b81c3d"
+    },
+    {
+      "path": "providers/llama8b/sylph_easy/tools/terminal_logits.py",
+      "source": "sc8b/sylph_shard/sylph_easy/tools/terminal_logits.py",
+      "source_sha256": "3ab5cec7ebef7fa2b0cfff189f91fa545546664db5b4665becec5a9a4eb0421f",
+      "release_sha256": "661a3c8a4086958497ac7db9a9f4db735ba5908250627aff18a263ae72ed43d2"
+    },
+    {
+      "path": "parallel/run_linked.py",
+      "source": "experiments/sc8b_parallel_adapt_20261116/run_linked.py",
+      "source_sha256": "149e4d5f8daf87cf2aa2b855fb58a433970db2008f179b805eefc2182382b0b5",
+      "release_sha256": "4586080e13b1b4d141e9b8dd856ca6a185db689216c07c1a3459d3048e815842"
+    },
+    {
+      "path": "parallel/runtime.py",
+      "source": "experiments/sc8b_parallel_adapt_20261116/runtime.py",
+      "source_sha256": "a58f50b804e4f98d10a5a3b4703d7189a24392904a71325b0e7c42812861af9e",
+      "release_sha256": "76ed4145804f0f7eac3873d605ae61282fcc789d5d6056a903256501e058a876"
+    },
+    {
+      "path": "parallel/sc_decode_mv_pc.py",
+      "source": "experiments/sc8b_parallel_adapt_20261116/sc_decode_mv_pc.py",
+      "source_sha256": "3c8a0319354bb19ecec4d48f9484d1282d41948a79de8af40cf5e69c7ae6c400",
+      "release_sha256": "6f3f990d5d62a0fba0bb09b487cb3f3e4d14aa97cc85f6ab8e449adebd81e178"
+    },
+    {
+      "path": "parallel/decode_input_sync.py",
+      "source": "experiments/sc8b_parallel_adapt_20261116/decode_input_sync.py",
+      "source_sha256": "5cc1ab7f5fd87e3393e79d1296b863a1890b396089ee522634e8909e9f8ff084",
+      "release_sha256": "5cc1ab7f5fd87e3393e79d1296b863a1890b396089ee522634e8909e9f8ff084"
+    },
+    {
+      "path": "parallel/checkpoint_subset.py",
+      "source": "experiments/sc8b_parallel_adapt_20261116/checkpoint_subset.py",
+      "source_sha256": "ee326626a2390fd15170b54d35c57fa34d3610b839060414620bf6307a59c087",
+      "release_sha256": "ee326626a2390fd15170b54d35c57fa34d3610b839060414620bf6307a59c087"
+    },
+    {
+      "path": "parallel/prefill_shard.py",
+      "source": "experiments/sc_prefill_nonlinear_v2_20261117/prefill_shard.py",
+      "source_sha256": "20789d8707a55c74106e253e362e81e185661cd7d902dc6610b5c81597a59317",
+      "release_sha256": "c3877b4b0a9a6042c441d085b262457ee38ead6453ab67608f0cbd5264410bca"
+    },
+    {
+      "path": "parallel/rms_two_roots.py",
+      "source": "experiments/sc_prefill_nonlinear_v2_20261117/rms_two_roots.py",
+      "source_sha256": "364277087b20c2eece22889f84091fc4173372d95b49f3781f8f60cbf4fcdbc2",
+      "release_sha256": "78133c321873c25c2e7a4b8650ab727c30194f148c80acde2765343467759696"
+    },
+    {
+      "path": "parallel/silu_batch.py",
+      "source": "experiments/sc_prefill_nonlinear_v2_20261117/silu_batch.py",
+      "source_sha256": "a6c5b7532e56645fcfc6b71bf6c9a35e9a23a41eb6cb6520001a1dcc9fbf53df",
+      "release_sha256": "861691fa559dd28e5591f38c9536d26a8b84afc797047f876e7aed27774fce4b"
+    },
+    {
+      "path": "parallel/rmsnorm_shard.py",
+      "source": "experiments/sc_prefill_rmsnorm_shard_20261116/rmsnorm_shard.py",
+      "source_sha256": "853f5d70b00982fd4387e665833dcb76540c1384789891e0e29ce379bc7374c3",
+      "release_sha256": "f3b8ef3014a228155ad2f88c561ab415e1343fa906990cd7e96ec5223f55f774"
+    },
+    {
+      "path": "parallel/oracle.py",
+      "source": "experiments/sc8b_parallel_adapt_20261116/oracle.py",
+      "source_sha256": "54844775d3f008c298ec441b495f774eda6c88480c334df8a6ae9bf7d14e940a",
+      "release_sha256": "54844775d3f008c298ec441b495f774eda6c88480c334df8a6ae9bf7d14e940a"
+    },
+    {
+      "path": "parallel/no_resident.py",
+      "source": "experiments/sc8b_parallel_adapt_20261116/no_resident.py",
+      "source_sha256": "f65a7924ef9a7780f2c9943dd64e07adeebe41eb683918fb751f051ea6c4b0a4",
+      "release_sha256": "f65a7924ef9a7780f2c9943dd64e07adeebe41eb683918fb751f051ea6c4b0a4"
+    },
+    {
+      "path": "parallel/resident3b.py",
+      "source": "paper/experiments/sc3b_decode_weight_resident_20261115/resident.py",
+      "source_sha256": "ea9dd050e6dc70fd6570c37b75c6af1ff6308b7d23c75e8b5c93284b355a4c4a",
+      "release_sha256": "ea9dd050e6dc70fd6570c37b75c6af1ff6308b7d23c75e8b5c93284b355a4c4a"
+    },
+    {
+      "path": "parallel/resident8b.py",
+      "source": "experiments/sc8b_decode_resident_probe_20261116/resident.py",
+      "source_sha256": "d7e3f033e99af2dd65fde5c6847eb7ad7ff4e6733ac245bc738cced80b7b95bf",
+      "release_sha256": "d7e3f033e99af2dd65fde5c6847eb7ad7ff4e6733ac245bc738cced80b7b95bf"
+    },
+    {
+      "path": "parallel/host_tables.py",
+      "source": "paper/experiments/sc8b_decode_host_tables_20261117/session.py",
+      "source_sha256": "0ad5004635b658ade28f1f88d45b2f569ec0dd83ba2f3ccb1c47579721ed021b",
+      "release_sha256": "43b79b410c65214ac0ee06797429f9d1a951d7d27f313f7ff26c0544c2ec0b29"
+    },
+    {
+      "path": "drivers/run_prefill_decode_mv_p0_cipher_kv.py",
+      "source": "experiments/sc_decode_same_token_20261110/run_prefill_decode_mv_p0_cipher_kv.py",
+      "source_sha256": "f476b6f61592d821011388f6e16a5e0cac5af0ceed30703714061d61251a3a20",
+      "release_sha256": "16804e9006a5471de407c594490c0d62b175a4aaf00a037096221913ee4fd1c9"
+    },
+    {
+      "path": "drivers/run_prefill_decode_mv_p0_cipher_kv_gpu.py",
+      "source": "experiments/sc_decode_same_token_20261110/run_prefill_decode_mv_p0_cipher_kv_gpu.py",
+      "source_sha256": "d3346fa38be189c5cf56a6324c9f6f7d19b27d4f9e8f82b4539867f23a94f6d2",
+      "release_sha256": "d3346fa38be189c5cf56a6324c9f6f7d19b27d4f9e8f82b4539867f23a94f6d2"
+    },
+    {
+      "path": "drivers/query_input.py",
+      "source": "experiments/sc_decode_same_token_20261110/query_input.py",
+      "source_sha256": "947e720608d8b4851916d47665c64f3838614148b436f6a2e734c6d98a6f9dec",
+      "release_sha256": "947e720608d8b4851916d47665c64f3838614148b436f6a2e734c6d98a6f9dec"
+    },
+    {
+      "path": "drivers/run_1b.py",
+      "source": "experiments/oneb_sc_linked_20261111/run_sc_1b_p0_cipher_kv_gpu.py",
+      "source_sha256": "f71d7679ba14faf3d19dad3666d24e26c7ddb006fdd04776e16bafccb56a855c",
+      "release_sha256": "88d057b9cae95556e7d8c18d3bb60e79a9cc1389f375003ab601de462ecaea24"
+    },
+    {
+      "path": "drivers/run_3b.py",
+      "source": "experiments/llama32_3b_head24_sc_20261113/run_sc_3b_p0_cipher_kv_gpu.py",
+      "source_sha256": "f0cb830e8f161724122a28464df9722300318b588049b2dba4c0522da0980a6f",
+      "release_sha256": "52919642abe7f8605bd24fc7de580fa860e3306cbc40cc3fde02bdc893798661"
+    },
+    {
+      "path": "assets/1b/chain/layer-00/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-00/calibration.json",
+      "source_sha256": "34adb11fc29eb82a0ae9fb33846f928f9966ed0e76a69997b4d797ac7aa4fed6",
+      "release_sha256": "8434e344e2de8c38ccc40bdbf5595c3f33651ff53c19d094cce064cdb0d5a494"
+    },
+    {
+      "path": "assets/1b/chain/layer-01/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-01/calibration.json",
+      "source_sha256": "148e5930ecc64dee79dbb3feb506d2d358e0a061b30ee6fe681336be4694ac6a",
+      "release_sha256": "a217700436f6bf1bca51c8607043d372762ff7698f759c2cc34520c14a559dbb"
+    },
+    {
+      "path": "assets/1b/chain/layer-02/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-02/calibration.json",
+      "source_sha256": "88c34f73d85c5dfc0c0502ab280c319f94c1b98fdbf4ab4378a4264ed9d0b34c",
+      "release_sha256": "369ba6ebb54cdadf73ef1a6853bd624eb81a2fca479f33ff51f08401ce98f7a6"
+    },
+    {
+      "path": "assets/1b/chain/layer-03/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-03/calibration.json",
+      "source_sha256": "8b4fc2f9538d3fce16c3ddd86cbaf0d8d3028a83fbd58be2f6f4c08d1ce9df62",
+      "release_sha256": "44e94fbdf9a17a6956dfb7424bb5c997737b9728f8adbfc696a0fb85769cb1e8"
+    },
+    {
+      "path": "assets/1b/chain/layer-04/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-04/calibration.json",
+      "source_sha256": "e844cd76b9201d1764e70264dd7e57458982407481a133f4e2a4d36c7fea7487",
+      "release_sha256": "3efb5481d8936fe40b7788acd26d3290c77557ebc7b109ed6ad3aa5fae6de3bd"
+    },
+    {
+      "path": "assets/1b/chain/layer-05/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-05/calibration.json",
+      "source_sha256": "07f1183c93218184c78300766265cfd46289d12e1b98af50e6528dde132a487c",
+      "release_sha256": "5cc7da47b1bf4f1854a2cc1418eb5a2a0bbdd2fa1757ffd81aa525e0549b1cc3"
+    },
+    {
+      "path": "assets/1b/chain/layer-06/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-06/calibration.json",
+      "source_sha256": "5adb8c8f131df5664478ffa32cde011d256b7d3e472091bfd8a20d42808d92fb",
+      "release_sha256": "35e660721a1748c031b0673f4b27f6b08c59111cfdc7e5bcf8f151a79ba59bed"
+    },
+    {
+      "path": "assets/1b/chain/layer-07/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-07/calibration.json",
+      "source_sha256": "585ec0689e0426c8ac28138873933b332f3380a85f4ffb46f303a590a2f9981c",
+      "release_sha256": "b1d86396c7358a6292ea3a359191e17865e8debc73334b4fde9cdaf9d66ba59f"
+    },
+    {
+      "path": "assets/1b/chain/layer-08/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-08/calibration.json",
+      "source_sha256": "0b4f333802c4f672342c8c5f6644e7162f905dbf09ebfc67020299ad0989447b",
+      "release_sha256": "f68c4c398e833c59641e7d3ddc3ffe0b152c39738e5cf612ecc0e7004e360230"
+    },
+    {
+      "path": "assets/1b/chain/layer-09/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-09/calibration.json",
+      "source_sha256": "e91d2bf64114b0b7b6ea8d39deaad403b5ef97e980660ae116f001705c96226e",
+      "release_sha256": "df2340bcedbe5d62166943506036f3bd3948abf11b7c8da5334bd6ac98fb61a8"
+    },
+    {
+      "path": "assets/1b/chain/layer-10/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-10/calibration.json",
+      "source_sha256": "1d25f99f258e2c1fd480553be73924faf5f98cd1d30aeb1be251b93b4a9de08a",
+      "release_sha256": "4388aced0baf726c35c3730dd262857b8b8443d4b402b160da55b9c994f4ad26"
+    },
+    {
+      "path": "assets/1b/chain/layer-11/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-11/calibration.json",
+      "source_sha256": "62111db496e198b681eec987a93799e5c9f804f4d960bdfef31d997d253b4b2e",
+      "release_sha256": "5f9ef6211426f1704a7a8d54fd479913512b44c1704b870595352184978b95fc"
+    },
+    {
+      "path": "assets/1b/chain/layer-12/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-12/calibration.json",
+      "source_sha256": "5730a41193673720fd34ca6dab8478daf94b9683efa5737e9eff6391c6897809",
+      "release_sha256": "c9057798e2aae33e459cd20139b901534fe041336ec5d45c31638d4fdabcef5e"
+    },
+    {
+      "path": "assets/1b/chain/layer-13/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-13/calibration.json",
+      "source_sha256": "917fb0c1281c232c7fbcc5a58d8ba0ef171d8f3acfcd81a9056d9f1519902cb5",
+      "release_sha256": "1e3c58e7b7e83b813725b3628c94dcb645b0c778638507d94a2ffa02a155f460"
+    },
+    {
+      "path": "assets/1b/chain/layer-14/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-14/calibration.json",
+      "source_sha256": "9c1fc9ef509dab2aa0b1533f769a6c3b31c4e000da867a0e5b1643e854011e66",
+      "release_sha256": "5e48713040e8df93489806b37a890c6be211bbcd3b4821a829a49fa3637a7219"
+    },
+    {
+      "path": "assets/1b/chain/layer-15/calibration.json",
+      "source": "sc-assets/llama32-1b/chain/layer-15/calibration.json",
+      "source_sha256": "91ae928bb1da9b76dd6fb6830295500bb6193f3f18681f03ae8ca5bcbfb4995c",
+      "release_sha256": "69777c2df4422f4999fdcd9bf078597256008d67ec871a7df5897995daca2ca4"
+    },
+    {
+      "path": "assets/1b/chain/chain-manifest.json",
+      "source": "sc-assets/llama32-1b/chain/chain-manifest.json",
+      "source_sha256": "cd2aec568d60d8bee89b092d607e6eff4f6adafe43d074db6a6047e877493d14",
+      "release_sha256": "2e004c4595c64876caeb7ce3c244902f4836035e5207b886b3a08bb675d84956"
+    },
+    {
+      "path": "assets/3b/chain/layer-00/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-00/calibration.json",
+      "source_sha256": "7b593cebb53fe29dcd7e4904808b49d366d1a9d69bb5f44e9924bfcd9b706b0f",
+      "release_sha256": "3ec41fcf398732484f3ee7bea66d303e98221621cb11f4b8ea79dc6bd599b855"
+    },
+    {
+      "path": "assets/3b/chain/layer-01/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-01/calibration.json",
+      "source_sha256": "fa142e1042d778dd21fe96310d12d7ed7ee7b0a70190727d4e06d5d6f0f4722d",
+      "release_sha256": "28f5e6eec257a24fb98406d946cc1f14bc1bac067147929f74fc01d0ea790165"
+    },
+    {
+      "path": "assets/3b/chain/layer-02/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-02/calibration.json",
+      "source_sha256": "e93b68338953f403dcbfa9793345ba86bf206c8e4482c5a3873796752516fe0f",
+      "release_sha256": "d515a04a7b48486dbf2944d9995038e947a747767b562d0f4e3e4b6f472624ce"
+    },
+    {
+      "path": "assets/3b/chain/layer-03/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-03/calibration.json",
+      "source_sha256": "72e4140f5a0e916bbf79a6f106eb8cc5be437b020b40e477f936f1e0ff01c329",
+      "release_sha256": "d32aa31e089ef3809568f6373a7280a0c425a5b681bad79832a72dcf660a58f6"
+    },
+    {
+      "path": "assets/3b/chain/layer-04/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-04/calibration.json",
+      "source_sha256": "1269216e6dd06266aa7bbc64ad5ce8e0422894c8b23269811b9aece2c625f79e",
+      "release_sha256": "2a602989e421a403ad7ebc1c4faef727e95e3b1ae77e4d79ef62e355de23af02"
+    },
+    {
+      "path": "assets/3b/chain/layer-05/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-05/calibration.json",
+      "source_sha256": "ec9157fc9d4481683b5c51a9b8bbc28dd7dcfd0bdcaa02f0acc75dcf76f6bc74",
+      "release_sha256": "69973205af35b0e5179a9fc79b17f6e97f5ccb5b14f9a1d5826741eac0bd7515"
+    },
+    {
+      "path": "assets/3b/chain/layer-06/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-06/calibration.json",
+      "source_sha256": "02b0e713d10b5a212939f10dd2ab21a2b91fe6c4731ee43b2d03ddbc3191c0e8",
+      "release_sha256": "98ce7d5ded5b360d29d9aaef9adb585f4e4971be76dcc5b6f1532b27fa6c77db"
+    },
+    {
+      "path": "assets/3b/chain/layer-07/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-07/calibration.json",
+      "source_sha256": "50b30b0544be763ca3f2ac72cd600fa7499a71f68937aa4cca76cb9a63c6c00b",
+      "release_sha256": "e4284eddec59df930a1bbc13068a826d1b500d34193ae5cf551a5ad5c15b04d9"
+    },
+    {
+      "path": "assets/3b/chain/layer-08/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-08/calibration.json",
+      "source_sha256": "c083806da714e29a8743c863199cc4fa10b1fb1f917b80d41207f3f4685a4968",
+      "release_sha256": "56e73d3a6cf7b5ea9d4874c30b499d06e37cf35bf2ddcfef3bf7e89774e270c2"
+    },
+    {
+      "path": "assets/3b/chain/layer-09/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-09/calibration.json",
+      "source_sha256": "9a252c0316e3de0167ba1f50b90a0aa8770a79956babfadb1d6be8d656b70661",
+      "release_sha256": "51aa2e01ae2173057becc9ca9648e98e70ee7fb23c5221d8eea27157a1c84652"
+    },
+    {
+      "path": "assets/3b/chain/layer-10/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-10/calibration.json",
+      "source_sha256": "8400aac7fb9e8f8c3e8242315aa7362cba6523a8112e4db233d914a19ed5a9d2",
+      "release_sha256": "0c2e1b665a2f539019a6a66c55e2f75feaebb0a2321c1f1307bf18049a868549"
+    },
+    {
+      "path": "assets/3b/chain/layer-11/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-11/calibration.json",
+      "source_sha256": "567aaac8d5a3135b8805c2c6a608e7889aa7f44637b8ae3be17b08d96e002e1e",
+      "release_sha256": "b5e0a5d2b1fc34171ccecae13dbab930dac9ffbd9d638db241b2fadb976aaa1e"
+    },
+    {
+      "path": "assets/3b/chain/layer-12/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-12/calibration.json",
+      "source_sha256": "eed5599cd8e1d3bf8df3075942a6ec567001138e1f5eb48215d05a826be031bd",
+      "release_sha256": "fb4746ef15ebd19243ff8cf4e283dea477ac5b6d2ccfdf63397658a3c766a0d7"
+    },
+    {
+      "path": "assets/3b/chain/layer-13/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-13/calibration.json",
+      "source_sha256": "c0b1099e4b09cd24bac22357466cb27eca5a3a2bdc52101df647d88adfc21d62",
+      "release_sha256": "6ac5d18d29d6df9ab034f1589d168c5e42a233a07a572f767e040f5ba31b277b"
+    },
+    {
+      "path": "assets/3b/chain/layer-14/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-14/calibration.json",
+      "source_sha256": "bde6287f81e4f822f98a637b9798d9ee59ba82c7582a760c6536eb2f7fb13214",
+      "release_sha256": "467dc58941477bb78aac623bebc4be171da9e57310c2d8ace8c7df5df09c98ad"
+    },
+    {
+      "path": "assets/3b/chain/layer-15/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-15/calibration.json",
+      "source_sha256": "1fe766131077443e3cc99b050d3f8de6a09a1a753bdf7c455fa5c66d6c58a931",
+      "release_sha256": "b4a9e74f15ba9a31c86b9f823bac9875d9a76cd540edb13d37439c546c082813"
+    },
+    {
+      "path": "assets/3b/chain/layer-16/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-16/calibration.json",
+      "source_sha256": "7db8ac5a1cd9430383017a442eb1b29451eb07252d9de5373310aced599c6c48",
+      "release_sha256": "4baf5291bb88ed223144566fa42a3f15b67564a7c7be1f52ac951b7cd616ce8d"
+    },
+    {
+      "path": "assets/3b/chain/layer-17/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-17/calibration.json",
+      "source_sha256": "60a297ddced108b47d405d57cf8306529cf35f1852623196ae5d77f1013591fa",
+      "release_sha256": "314fa680caca46493f47ef6a8f0b528520cf225c17153d3463c05fbb23f2be8a"
+    },
+    {
+      "path": "assets/3b/chain/layer-18/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-18/calibration.json",
+      "source_sha256": "a6e134149eb1b164d520dd3068b01cff057317e71383cd764a0e2efbac849a40",
+      "release_sha256": "426b3cdc46fb8e7ba3e5fa218ff052f6f789cd6fbf970bbbef6b4e9359945876"
+    },
+    {
+      "path": "assets/3b/chain/layer-19/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-19/calibration.json",
+      "source_sha256": "abcad0bc06b3b430e0af5f8dfdb82a43d9574e1093fc6baf19f14d57b68afeb0",
+      "release_sha256": "70b20dc34771a2c67a5d1f1ede234f85ef5cfa8fd204b3dccf213ede13f70bdd"
+    },
+    {
+      "path": "assets/3b/chain/layer-20/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-20/calibration.json",
+      "source_sha256": "55963023655c09d445f9805fb5e11294228598b6ed5a1821923760f771833637",
+      "release_sha256": "1ce0cfb5c16a34fb024539319efb5f26e4f46b496d0d6e5ab6d5a69aa54c47c0"
+    },
+    {
+      "path": "assets/3b/chain/layer-21/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-21/calibration.json",
+      "source_sha256": "284d8cc4693ec3a9b0740b424147e3865e6f75bd356e3277f513723fb8ebf117",
+      "release_sha256": "0b9679aa2d423147f8836e25e6abdab5e7c6c6d73468ea171518f9363239b734"
+    },
+    {
+      "path": "assets/3b/chain/layer-22/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-22/calibration.json",
+      "source_sha256": "80c2575fa52cf00690555527f393518b447a06534f495747e0532739d201a916",
+      "release_sha256": "696616a78cf200587291ab6638676779e60d192b2ba2f5449d473f705fe89264"
+    },
+    {
+      "path": "assets/3b/chain/layer-23/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-23/calibration.json",
+      "source_sha256": "3ef2e142cd535245230024b033b10a99cb93bbde067a753f0dcd8f5f88d936e0",
+      "release_sha256": "25effb528a313908a2ef05b4325af7ceff1a11aefc6b0105f098a0a48f2bab27"
+    },
+    {
+      "path": "assets/3b/chain/layer-24/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-24/calibration.json",
+      "source_sha256": "2f9f2936b9675ad1e40f97b1af4469e728b0be22d356415309f08cd436df9f8f",
+      "release_sha256": "b5a42f27cb6b69fb13b57575ae4f73b687e4c473bb44af6bcb54388cd669ca19"
+    },
+    {
+      "path": "assets/3b/chain/layer-25/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-25/calibration.json",
+      "source_sha256": "67e88abffbc3e11433c41ac9282ae6bcf643fd30543acddb5dddc369246bfe0c",
+      "release_sha256": "1eb871e2d7e92d6a7a5f46ac4deef502dd0480370a9aea7e297b781dcfc89df6"
+    },
+    {
+      "path": "assets/3b/chain/layer-26/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-26/calibration.json",
+      "source_sha256": "ff4f5fa1d9a15b7429247084fa08e4f4f53ae2f9ea2255583ff0f834700d11c4",
+      "release_sha256": "01d7318dac7defbab11492a0bb338607d1504921fb5fe89ad124d83d72900f25"
+    },
+    {
+      "path": "assets/3b/chain/layer-27/calibration.json",
+      "source": "sc-assets/llama32-3b/chain/layer-27/calibration.json",
+      "source_sha256": "5d717efb17f57760173d1c7242126a941778f2884e510edf0571e9d1ce7a9476",
+      "release_sha256": "7c6ac196d6aeef5daa7bfcf86268bb05b2bcf8d0ddd6d707f9818531078290d3"
+    },
+    {
+      "path": "assets/3b/chain/chain-manifest.json",
+      "source": "sc-assets/llama32-3b/chain/chain-manifest.json",
+      "source_sha256": "e901486c4fe2a08ffb63472c22ce67c5abd22b1d7cddcdb0f0d5db7501167463",
+      "release_sha256": "2071d4c979575f9385afa37ebe7c26d2fa217bed6e7e249b93ee4ed6f0a0b3b5"
+    },
+    {
+      "path": "assets/8b/chain/layer-00/calibration.json",
+      "source": "sc8b/chain/layer-00/calibration.json",
+      "source_sha256": "7bb63cc5445c4c448fdbb4293652760b9162d78dd9950a1c1fbfaa81354a3763",
+      "release_sha256": "23225a9a5d09ca6c8128e046eac872b2448993df0d71a6c254f8e215e7b07070"
+    },
+    {
+      "path": "assets/8b/chain/layer-01/calibration.json",
+      "source": "sc8b/chain/layer-01/calibration.json",
+      "source_sha256": "c983162a83fdf02a29ccd6e4223b44b6c40c724b0170794e3f2ac63697b40de4",
+      "release_sha256": "cba411adb903ef36c2200372d0f74dcd1ccd146fc69563f3e427e097b7278100"
+    },
+    {
+      "path": "assets/8b/chain/layer-02/calibration.json",
+      "source": "sc8b/chain/layer-02/calibration.json",
+      "source_sha256": "3208c3e70b7fa58eed10914b41208e4cf71ead021afb0eba1a017bdb91e7747f",
+      "release_sha256": "3208c3e70b7fa58eed10914b41208e4cf71ead021afb0eba1a017bdb91e7747f"
+    },
+    {
+      "path": "assets/8b/chain/layer-03/calibration.json",
+      "source": "sc8b/chain/layer-03/calibration.json",
+      "source_sha256": "e197517ca2cfcf88eb03e050422f7c636389644d6f35d1a5fb2ae9a9d27abc50",
+      "release_sha256": "e197517ca2cfcf88eb03e050422f7c636389644d6f35d1a5fb2ae9a9d27abc50"
+    },
+    {
+      "path": "assets/8b/chain/layer-04/calibration.json",
+      "source": "sc8b/chain/layer-04/calibration.json",
+      "source_sha256": "3a54b908ebc41b22179d11a34fc3d0b69c20ba988726ee10eb685d5bf260fc17",
+      "release_sha256": "3a54b908ebc41b22179d11a34fc3d0b69c20ba988726ee10eb685d5bf260fc17"
+    },
+    {
+      "path": "assets/8b/chain/layer-05/calibration.json",
+      "source": "sc8b/chain/layer-05/calibration.json",
+      "source_sha256": "4a370eaff9e56fd3c627a794e45834c0598b2ea8613973d9fffeeefc0cec2bd8",
+      "release_sha256": "4a370eaff9e56fd3c627a794e45834c0598b2ea8613973d9fffeeefc0cec2bd8"
+    },
+    {
+      "path": "assets/8b/chain/layer-06/calibration.json",
+      "source": "sc8b/chain/layer-06/calibration.json",
+      "source_sha256": "a0c9e6fe30f61cb99c0f4a14dd1053183a913a913213cb6d9ae7d4432e298456",
+      "release_sha256": "a0c9e6fe30f61cb99c0f4a14dd1053183a913a913213cb6d9ae7d4432e298456"
+    },
+    {
+      "path": "assets/8b/chain/layer-07/calibration.json",
+      "source": "sc8b/chain/layer-07/calibration.json",
+      "source_sha256": "ccd0a31a3b9e3fe288b2f5654c2412f70be33f0a6fedd9492b897d1cd9479ec1",
+      "release_sha256": "ccd0a31a3b9e3fe288b2f5654c2412f70be33f0a6fedd9492b897d1cd9479ec1"
+    },
+    {
+      "path": "assets/8b/chain/layer-08/calibration.json",
+      "source": "sc8b/chain/layer-08/calibration.json",
+      "source_sha256": "0c30171eddb259072dd5b81a4f2e72ec1dc058c8f6d68c7c24333d66f8fc0455",
+      "release_sha256": "0c30171eddb259072dd5b81a4f2e72ec1dc058c8f6d68c7c24333d66f8fc0455"
+    },
+    {
+      "path": "assets/8b/chain/layer-09/calibration.json",
+      "source": "sc8b/chain/layer-09/calibration.json",
+      "source_sha256": "27b30ed3ec8a4adeaec9753469a051bc408f1f36689ad7a0083a1e360c0f19fd",
+      "release_sha256": "27b30ed3ec8a4adeaec9753469a051bc408f1f36689ad7a0083a1e360c0f19fd"
+    },
+    {
+      "path": "assets/8b/chain/layer-10/calibration.json",
+      "source": "sc8b/chain/layer-10/calibration.json",
+      "source_sha256": "683346c84ec09edce2e2d01e9557892be19c908616fd21b60793bd24bc461e63",
+      "release_sha256": "683346c84ec09edce2e2d01e9557892be19c908616fd21b60793bd24bc461e63"
+    },
+    {
+      "path": "assets/8b/chain/layer-11/calibration.json",
+      "source": "sc8b/chain/layer-11/calibration.json",
+      "source_sha256": "9ac3635e888a7a35e58f7d4cc49f57781c235ff845e12b8aca43e4380634adb5",
+      "release_sha256": "9ac3635e888a7a35e58f7d4cc49f57781c235ff845e12b8aca43e4380634adb5"
+    },
+    {
+      "path": "assets/8b/chain/layer-12/calibration.json",
+      "source": "sc8b/chain/layer-12/calibration.json",
+      "source_sha256": "c589c0f46725645ab5702337ba4ce0e722ace55051f4fadfe62b7ca17c61cee9",
+      "release_sha256": "c589c0f46725645ab5702337ba4ce0e722ace55051f4fadfe62b7ca17c61cee9"
+    },
+    {
+      "path": "assets/8b/chain/layer-13/calibration.json",
+      "source": "sc8b/chain/layer-13/calibration.json",
+      "source_sha256": "1136ca35ea16ecd04340ac2399b92441720bfcd056fe383c54bd682de3bae7e1",
+      "release_sha256": "1136ca35ea16ecd04340ac2399b92441720bfcd056fe383c54bd682de3bae7e1"
+    },
+    {
+      "path": "assets/8b/chain/layer-14/calibration.json",
+      "source": "sc8b/chain/layer-14/calibration.json",
+      "source_sha256": "86926a5a158ff9c4537365201ee724d65fd9d826c0cdd9694d039b6cacc38e42",
+      "release_sha256": "86926a5a158ff9c4537365201ee724d65fd9d826c0cdd9694d039b6cacc38e42"
+    },
+    {
+      "path": "assets/8b/chain/layer-15/calibration.json",
+      "source": "sc8b/chain/layer-15/calibration.json",
+      "source_sha256": "969181e8e4f896d202e9e79e87f5d6f44a3f5eee0fb7e8bc5a52352457fa7de6",
+      "release_sha256": "969181e8e4f896d202e9e79e87f5d6f44a3f5eee0fb7e8bc5a52352457fa7de6"
+    },
+    {
+      "path": "assets/8b/chain/layer-16/calibration.json",
+      "source": "sc8b/chain/layer-16/calibration.json",
+      "source_sha256": "6580fcdd39aaf4e385c1ab18e36ec094610ae80eab82f24380989e6c7076135f",
+      "release_sha256": "6580fcdd39aaf4e385c1ab18e36ec094610ae80eab82f24380989e6c7076135f"
+    },
+    {
+      "path": "assets/8b/chain/layer-17/calibration.json",
+      "source": "sc8b/chain/layer-17/calibration.json",
+      "source_sha256": "09bf0c0431aa449dbd30de4e0094cf22b381ef2ee81bfd5d279e68d4ecbe60c0",
+      "release_sha256": "09bf0c0431aa449dbd30de4e0094cf22b381ef2ee81bfd5d279e68d4ecbe60c0"
+    },
+    {
+      "path": "assets/8b/chain/layer-18/calibration.json",
+      "source": "sc8b/chain/layer-18/calibration.json",
+      "source_sha256": "d9ec532232e9f5c593983a633ad350ad38261a61d292689cbe821d8e2df42803",
+      "release_sha256": "d9ec532232e9f5c593983a633ad350ad38261a61d292689cbe821d8e2df42803"
+    },
+    {
+      "path": "assets/8b/chain/layer-19/calibration.json",
+      "source": "sc8b/chain/layer-19/calibration.json",
+      "source_sha256": "c2ab7c1bb492c12e97d73a7efc9f3bb588ead6c3154f69f05ca29709666edbf7",
+      "release_sha256": "c2ab7c1bb492c12e97d73a7efc9f3bb588ead6c3154f69f05ca29709666edbf7"
+    },
+    {
+      "path": "assets/8b/chain/layer-20/calibration.json",
+      "source": "sc8b/chain/layer-20/calibration.json",
+      "source_sha256": "b49a2645d65af426a413aa80e7b60c4a8d9e24cd85eb5a58cad3225c228550ac",
+      "release_sha256": "b49a2645d65af426a413aa80e7b60c4a8d9e24cd85eb5a58cad3225c228550ac"
+    },
+    {
+      "path": "assets/8b/chain/layer-21/calibration.json",
+      "source": "sc8b/chain/layer-21/calibration.json",
+      "source_sha256": "e037cde6bd01171348e7d552fdfcd72ffcb2d187fc3d5526bd03762023c84eed",
+      "release_sha256": "e037cde6bd01171348e7d552fdfcd72ffcb2d187fc3d5526bd03762023c84eed"
+    },
+    {
+      "path": "assets/8b/chain/layer-22/calibration.json",
+      "source": "sc8b/chain/layer-22/calibration.json",
+      "source_sha256": "ebd631072b6ffc070d800adc02b093ec19a45d924bab36b6d40e0c432cee011c",
+      "release_sha256": "ebd631072b6ffc070d800adc02b093ec19a45d924bab36b6d40e0c432cee011c"
+    },
+    {
+      "path": "assets/8b/chain/layer-23/calibration.json",
+      "source": "sc8b/chain/layer-23/calibration.json",
+      "source_sha256": "0fb5d5a6e6f0992d63dd3a0707845cfbacf122deba68586f04ce2182f5d1de05",
+      "release_sha256": "0fb5d5a6e6f0992d63dd3a0707845cfbacf122deba68586f04ce2182f5d1de05"
+    },
+    {
+      "path": "assets/8b/chain/layer-24/calibration.json",
+      "source": "sc8b/chain/layer-24/calibration.json",
+      "source_sha256": "d7981b2436d6e44d95c20a704d053fa42bb576d9ff8cee29b5896381bd3eaf9c",
+      "release_sha256": "d7981b2436d6e44d95c20a704d053fa42bb576d9ff8cee29b5896381bd3eaf9c"
+    },
+    {
+      "path": "assets/8b/chain/layer-25/calibration.json",
+      "source": "sc8b/chain/layer-25/calibration.json",
+      "source_sha256": "cbf346e1a9b9db9584bc315cdc7ccfb56ae6c7af67d456e541a1b056684b97e0",
+      "release_sha256": "cbf346e1a9b9db9584bc315cdc7ccfb56ae6c7af67d456e541a1b056684b97e0"
+    },
+    {
+      "path": "assets/8b/chain/layer-26/calibration.json",
+      "source": "sc8b/chain/layer-26/calibration.json",
+      "source_sha256": "6f1149c1f90e2bb1a8555d00ec02ab8714fc206def43207fbc03c18426bb11c2",
+      "release_sha256": "6f1149c1f90e2bb1a8555d00ec02ab8714fc206def43207fbc03c18426bb11c2"
+    },
+    {
+      "path": "assets/8b/chain/layer-27/calibration.json",
+      "source": "sc8b/chain/layer-27/calibration.json",
+      "source_sha256": "0f5e0ee96fe5c72108bab20fcbe0f094dff2760f2a2f902bf70a05b78fff70bd",
+      "release_sha256": "0f5e0ee96fe5c72108bab20fcbe0f094dff2760f2a2f902bf70a05b78fff70bd"
+    },
+    {
+      "path": "assets/8b/chain/layer-28/calibration.json",
+      "source": "sc8b/chain/layer-28/calibration.json",
+      "source_sha256": "eebd1ffe93c35af4e269fa523f573c3f9b3c00d21970c10dea08aa5576a74ab2",
+      "release_sha256": "eebd1ffe93c35af4e269fa523f573c3f9b3c00d21970c10dea08aa5576a74ab2"
+    },
+    {
+      "path": "assets/8b/chain/layer-29/calibration.json",
+      "source": "sc8b/chain/layer-29/calibration.json",
+      "source_sha256": "45754ad9000efe592552035f84abed36c6aaed5ce09c4cb972b55ea6523ef6d3",
+      "release_sha256": "45754ad9000efe592552035f84abed36c6aaed5ce09c4cb972b55ea6523ef6d3"
+    },
+    {
+      "path": "assets/8b/chain/layer-30/calibration.json",
+      "source": "sc8b/chain/layer-30/calibration.json",
+      "source_sha256": "3282444014647606f7132e2529978a24671876ebd43138be3d7b98c880e38da3",
+      "release_sha256": "3282444014647606f7132e2529978a24671876ebd43138be3d7b98c880e38da3"
+    },
+    {
+      "path": "assets/8b/chain/layer-31/calibration.json",
+      "source": "sc8b/chain/layer-31/calibration.json",
+      "source_sha256": "4496eb656f672c5ec285dc587a56db0f344c0dc6b1f4d0bcd876eaea178891e3",
+      "release_sha256": "4496eb656f672c5ec285dc587a56db0f344c0dc6b1f4d0bcd876eaea178891e3"
+    },
+    {
+      "path": "assets/8b/chain/chain-manifest.json",
+      "source": "sc8b/chain/chain-manifest.json",
+      "source_sha256": "56ade3d15f87b4c0d14afa31eb4f2f2545fa8537c0cb5394e909e8ac0f05e128",
+      "release_sha256": "5cd69a993c4f5d429bb327c289dc362e5c792b39745eae1fd9eff30d95bac458"
+    }
+  ],
+  "modifications": "Relocated import roots, portable paths and release CLI; original arithmetic retained.",
+  "artifact_scope": "Frozen-profile inference and timing; unused offline calibration modules are excluded.",
+  "structure_cleanup": "SC public execution uses run.py; redundant internal linked CLI and unsupported Qwen branches removed. Provider math and frozen calibrations unchanged."
+}
